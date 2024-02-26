@@ -1,0 +1,47 @@
+:root {
+  --text-gradient: -webkit-linear-gradient(
+    70deg,
+    #385bf998 0%,
+    #385bf9ec 60%,
+    #385cf9 80%
+  );
+
+  --gradient: -webkit-linear-gradient(40deg, #385bf9a4, #385bf9d1, #385cf9);
+  --gradient-hover: -webkit-linear-gradient(40deg, #2048fc, #385bf9, #385cf9);
+  --primary: #385cf9;
+  --secondary: #1b45ff;
+  --dark: #1f1f1f;
+  --grey: #333333;
+  --lgrey: #777777;
+  --dark-white: #cccccc;
+  --light: #eeeeee;
+  --black: #000000;
+  --white: #ffffff;
+
+  --sm: 0.8rem;
+  --norm: 1rem;
+  --md: 1.2rem;
+  --lg: 1.8rem;
+  --xl: 2.4rem;
+  --xxl: 3.2rem;
+  --xxxl: 4.8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+  width: 7px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: var(--white);
+}
