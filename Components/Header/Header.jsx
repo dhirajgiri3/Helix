@@ -49,12 +49,26 @@ const StyledHeader = styled.div`
       gap: 2rem;
       li {
         list-style: none;
+        .link {
+          font-size: 0.95rem;
+          font-weight: 500;
+          color: var(--grey);
+          transition: all 0.3s ease-in-out;
+          text-decoration: none;
+          cursor: pointer;
+
+          &:hover {
+            color: var(--primary);
+          }
+        }
+
         a {
           font-size: 0.95rem;
           font-weight: 500;
           color: var(--grey);
           transition: all 0.3s ease-in-out;
           text-decoration: none;
+          cursor: pointer;
 
           &:hover {
             color: var(--primary);
@@ -65,7 +79,7 @@ const StyledHeader = styled.div`
   }
   .right {
     button {
-      padding: 0.7rem 1.5rem;
+      padding: 0.8rem 1.6rem;
       border: none;
       border-radius: 100px;
       font-size: 0.95rem;
@@ -77,6 +91,59 @@ const StyledHeader = styled.div`
 `;
 
 function Header() {
+  const scrollToContact = () => {
+    const servicesSection = document.getElementById("contact");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        duration: "1s",
+      });
+    }
+  };
+  const scrollToServices = () => {
+    const servicesSection = document.getElementById("services");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        duration: "1s",
+      });
+    }
+  };
+
+  const scrollToFeatures = () => {
+    const servicesSection = document.getElementById("features");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        duration: "1s",
+      });
+    }
+  };
+
+  const scrollToCases = () => {
+    const servicesSection = document.getElementById("cases");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        duration: "1s",
+      });
+    }
+  };
+
+  const scrollToAboutUs = () => {
+    const servicesSection = document.getElementById("aboutus");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        duration: "1s",
+      });
+    }
+  };
   return (
     <StyledHeader>
       <div className="left">
@@ -88,26 +155,34 @@ function Header() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="#features">Features</Link>
+            <div className="link" onClick={scrollToServices}>
+              Services
+            </div>
           </li>
           <li>
-            <Link href="#successstories">Success Stories</Link>
+            <div className="link" onClick={scrollToFeatures}>
+              Features
+            </div>
           </li>
           <li>
-            <Link href="#pricing">Pricing</Link>
+            <div className="link" onClick={scrollToCases}>
+              Case Study
+            </div>
           </li>
           <li>
-            <Link href="#aboutus">About Us</Link>
+            <Link href="/pricing">Pricing</Link>
           </li>
           <li>
-            <Link href="#contactus">Contact Us</Link>
+            <div className="link" onClick={scrollToAboutUs}>
+              About Us
+            </div>
           </li>
         </ul>
       </div>
       <div className="right">
-        <Link href="/demo">
-          <MainButton text={"Get a Demo"} />
-        </Link>
+        <div onClick={scrollToContact}>
+          <MainButton text={"Contact Us"} />
+        </div>
       </div>
     </StyledHeader>
   );

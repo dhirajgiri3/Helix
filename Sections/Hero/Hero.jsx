@@ -268,13 +268,34 @@ const StyledHero = styled.section`
 `;
 
 function Hero() {
+  const scrollToServices = () => {
+    const servicesSection = document.getElementById("services");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        duration: "1s",
+      });
+    }
+  };
+
+  const scrollToCases = () => {
+    const casesSection = document.getElementById("cases");
+    if (casesSection) {
+      casesSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        duration: "1s",
+      });
+    }
+  };
+
   return (
     <StyledHero>
       <div className="herocontainer">
         <div className="top">
           <div className="label">
-            {" "}
-            <p>Trusted by Industry Players</p>{" "}
+            <p>Trusted by Industry Players</p>
             <img
               src="https://firebasestorage.googleapis.com/v0/b/cyper-studio-saas.appspot.com/o/stars.png?alt=media&token=4c19c197-e1d7-4518-9e6a-43a7e5518df6"
               alt="cyper studio stars"
@@ -283,23 +304,28 @@ function Hero() {
         </div>
         <div className="middle">
           <h1>
-            Get Custom <span>Logistics</span> Software Designed for Your{" "}
-            <span>Success</span> by Helix
+            Let's Design Your <span>Success</span> : Get a Custom HELIX-like
+            Platform
           </h1>
           <h4>
-            Streamline operations, optimize workflows, and achieve your
-            logistics goals with solutions uniquely tailored to your business.
+            HELIX represents the power of logistics software tailored to your
+            exact needs. Our expertise and your vision – it's the perfect
+            combination to unlock your business's full potential.
           </h4>
         </div>
         <div className="bottom">
           <div className="cta">
-            <button className="button1">Explore HELIX Solutions</button>
-            <button className="button2">Download Our Free eBook</button>
+            <button className="button1" onClick={scrollToServices}>
+              Explore Helix Solutions
+            </button>
+            <button onClick={scrollToCases} className="button2">
+              Explore our case studies
+            </button>
           </div>
           <div className="para">
             <p>
               Get your custom logistics software without any hurdles in{" "}
-              <span>10 days</span>
+              <span>15 days</span>
             </p>
           </div>
           <div className="mockup">

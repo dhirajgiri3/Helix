@@ -9,6 +9,7 @@ const StyledMainButton = styled.button`
   position: relative;
   transition: all 0.3s ease-in-out;
   overflow: hidden;
+  cursor: pointer;
 
   &::before {
     content: "";

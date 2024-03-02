@@ -3,12 +3,12 @@ import styled from "styled-components";
 import rocket from "@/Assets/Images/Quote/rocket.png";
 import blueshipLogo from "@/Assets/Images/Quote/Blueship-white-tp.png";
 import Image from "next/image";
+import DimpleChahal from "@/Assets/Images/People/Dimple-Chahal.png";
 
 const StyledQuote = styled.div`
   width: 100%;
   height: 100%;
-  padding: 5rem 7.5rem;
-  padding-bottom: 2.5rem;
+  padding: 2.5rem 7.5rem;
 
   @media screen and (max-width: 768px) {
     padding: 2.5rem 1rem;
@@ -33,22 +33,26 @@ const StyledQuote = styled.div`
     }
 
     .client-img {
-      .profile-img {
-        width: 10rem;
-        height: 10rem;
-        object-fit: cover;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 100%;
-        z-index: 2;
-        border: 15px solid var(--white);
+      width: 9rem;
+      height: 9rem;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 100%;
+      z-index: 2;
+      border: 15px solid var(--white);
 
-        @media screen and (max-width: 768px) {
-          width: 9rem;
-          height: 9rem;
-        }
+      @media screen and (max-width: 768px) {
+        width: 9rem;
+        height: 9rem;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        object-fit: cover;
       }
     }
 
@@ -109,10 +113,10 @@ const StyledQuote = styled.div`
           color: var(--light);
           line-height: 1.5;
 
-            @media screen and (max-width: 768px) {
-                font-size: var(--md);
-                font-weight: 500;
-            }
+          @media screen and (max-width: 768px) {
+            font-size: var(--md);
+            font-weight: 500;
+          }
         }
       }
 
@@ -165,12 +169,7 @@ function Quote() {
     <StyledQuote>
       <div className="quote-container">
         <div className="client-img">
-          <img
-            src="https://vault.uicore.co/modern-landing/wp-content/uploads/sites/48/2022/08/Modern-Landing-Head-Image.webp"
-            alt="Dimple Chahal"
-            title="Dimple Chahal"
-            className="profile-img"
-          />
+          <Image src={DimpleChahal} alt="Dimple Chahal" title="Dimple Chahal" />
         </div>
         <div className="rocket-img">
           <Image src={rocket} alt="Helix Rcoket Image" title="Helix Rocket" />

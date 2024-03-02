@@ -14,7 +14,7 @@ const StyledFeatures = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 10rem;
+  padding: 2.5rem 7.5rem;
   background: var(--white);
 
   @media screen and (max-width: 768px) {
@@ -37,7 +37,7 @@ const StyledFeatures = styled.div`
       justify-content: center;
       align-items: center;
       gap: 1rem;
-      
+
       h1 {
         font-size: var(--xl);
         font-weight: 700;
@@ -52,6 +52,7 @@ const StyledFeatures = styled.div`
 
         @media screen and (max-width: 768px) {
           width: 100%;
+          font-size: var(--lg);
         }
       }
 
@@ -61,6 +62,7 @@ const StyledFeatures = styled.div`
         color: var(--grey);
         text-align: center;
         width: 50%;
+        line-height: 1.5;
 
         @media screen and (max-width: 768px) {
           font-size: var(--sm);
@@ -76,13 +78,13 @@ const StyledFeatures = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
-    padding: 5rem 0;
+    padding: 2.5rem 0;
     place-items: center;
 
     @media screen and (max-width: 768px) {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      gap: 2rem;
+      gap: 0rem;
       padding: 3rem 0;
     }
 
@@ -91,7 +93,7 @@ const StyledFeatures = styled.div`
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      gap: 0.5rem;
+      gap: 1rem;
       text-align: left;
       padding: 2rem 1.5rem;
       border-radius: 1rem;
@@ -113,12 +115,14 @@ const StyledFeatures = styled.div`
         padding: 1rem;
         width: 100%;
         height: 15rem;
-
       }
 
       .icon {
-        width: 3rem;
-        height: 3rem;
+        width: 2.8rem;
+        height: 2.8rem;
+        border: 1px solid var(--primary);
+        padding: 0.7rem;
+        border-radius: 50%;
         img {
           width: 100%;
           height: 100%;
@@ -136,6 +140,7 @@ const StyledFeatures = styled.div`
         font-size: var(--sm);
         font-weight: 500;
         color: var(--grey);
+        line-height: 1.5;
       }
     }
 
@@ -144,6 +149,11 @@ const StyledFeatures = styled.div`
       grid-column: 2/3;
       height: 100%;
       width: 100%;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
 
       @media screen and (max-width: 768px) {
         grid-row: 1/2;
@@ -162,16 +172,18 @@ const StyledFeatures = styled.div`
 
 function Features() {
   return (
-    <StyledFeatures>
+    <StyledFeatures id="features">
       <div className="feature-up">
         <div className="title">
           <h1>
             {" "}
-            <span>Features</span> that drive result
+            Transformative <span>Features</span> : What We Can Build for You
           </h1>
           <p>
-            Unlock the capabilities that streamline operations, empower
-            data-driven decisions, and elevate your customer experience.
+            Experience the power of a logistics platform tailored to your unique
+            needs. From streamlining operations to driving data-driven growth,
+            our expertise delivers the features that matter most to your
+            business.
           </p>
         </div>
       </div>

@@ -2,6 +2,7 @@ import MainButton from "@/Components/Buttons/MainButton";
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import BlueshipCase from "./Blueship/BlueshipCase";
+import Link from "next/link";
 
 const StyledCases = styled.div`
   width: 100%;
@@ -29,8 +30,6 @@ const StyledCases = styled.div`
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     transition: all 0.3s ease-in-out;
 
     @media screen and (max-width: 768px) {
@@ -86,6 +85,8 @@ const StyledCases = styled.div`
 
       @media screen and (max-width: 768px) {
         width: 100%;
+        height: auto;
+        gap: 2rem;
       }
 
       h1 {
@@ -98,6 +99,13 @@ const StyledCases = styled.div`
         font-size: var(--norm);
         font-weight: 400;
         color: var(--grey);
+      }
+
+      .cta-buttons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
       }
 
       @media screen and (max-width: 768px) {
@@ -128,7 +136,7 @@ const StyledCases = styled.div`
 
     @media screen and (max-width: 768px) {
       flex-direction: column-reverse;
-      gap: 2rem;
+      gap: 1rem;
     }
 
     .left {
@@ -152,6 +160,16 @@ const StyledCases = styled.div`
         color: var(--grey);
       }
 
+      .cta-buttons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+
+        @media screen and (max-width: 768px) {
+        }
+      }
+
       button {
         padding: 1rem 2rem;
         border: none;
@@ -164,7 +182,8 @@ const StyledCases = styled.div`
 
       @media screen and (max-width: 768px) {
         width: 100%;
-        gap: 1rem;
+        height: auto;
+        gap: 2rem;
       }
     }
 
@@ -221,57 +240,71 @@ const Cases = () => {
   };
 
   return (
-    <StyledCases>
-      <div className="label">
-        <p>Case Studies</p>
-      </div>
-      <div className="blueship">
-        <div className="left">
-          <video
-            src="https://firebasestorage.googleapis.com/v0/b/cyper-studio-saas.appspot.com/o/blueship-video.webm?alt=media&token=e87fc1f5-8b6c-4939-a2ab-dfbf3f612092"
-            loop
-            autoPlay
-            muted
-            playsInline
-          />
+    <>
+      <StyledCases id="cases">
+        <div className="label">
+          <p>Case Studies</p>
         </div>
-        <div className="right">
-          <h1>Blueship</h1>
-          <p>
-            Blueship is a logistics company that provides a wide range of
-            services including warehousing, distribution, and transportation.
-          </p>
-          <div onClick={handleCaseViewer}>
-            <MainButton text={"View Case"} />
+        <div className="blueship">
+          <div className="left">
+            <video
+              src="https://firebasestorage.googleapis.com/v0/b/cyper-studio-saas.appspot.com/o/blueship-video.webm?alt=media&token=e87fc1f5-8b6c-4939-a2ab-dfbf3f612092"
+              loop
+              autoPlay
+              muted
+              playsInline
+            />
+          </div>
+          <div className="right">
+            <h1>Blueship</h1>
+            <p>
+              Blueship is a logistics company that provides a wide range of
+              services including warehousing, distribution, and transportation.
+            </p>
+            <div className="cta-buttons">
+              <Link href="/blueship">
+                <MainButton text={"View Case"} />
+              </Link>
+              <a href="https://www.blueship.in/" target="_blank">
+                <button>Visit Website</button>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="shipex-india">
-        <div className="left">
-          <h1>Shipex India</h1>
-          <p>
-            Shipex India is a logistics company that provides a wide range of
-            services including warehousing, distribution, and transportation.
-          </p>
-          <MainButton text={"View Case"} onClick={handleCaseViewer} />{" "}
+        <div className="shipex-india">
+          <div className="left">
+            <h1>Shipex India</h1>
+            <p>
+              Shipex India is a logistics company that provides a wide range of
+              services including warehousing, distribution, and transportation.
+            </p>
+            <div className="cta-buttons">
+              <Link href="/shipexindia">
+                <MainButton text={"View Case"} />
+              </Link>
+              <a href="https://www.shipexindia.in/" target="_blank">
+                <button>Visit Website</button>
+              </a>
+            </div>
+          </div>
+          <div className="right">
+            <video
+              src="https://firebasestorage.googleapis.com/v0/b/cyper-studio-saas.appspot.com/o/shipex-video.webm?alt=media&token=1eb9f468-4082-49a6-9ecc-6a0feab3bedb"
+              loop
+              autoPlay
+              muted
+              playsInline
+            />
+          </div>
         </div>
-        <div className="right">
-          <video
-            src="https://firebasestorage.googleapis.com/v0/b/cyper-studio-saas.appspot.com/o/shipex-video.webm?alt=media&token=1eb9f468-4082-49a6-9ecc-6a0feab3bedb"
-            loop
-            autoPlay
-            muted
-            playsInline
-          />
-        </div>
-      </div>
-      {showBlueshipCase && (
-        <div onClick={closeCase} className="closebtn">
-          close
-        </div>
-      )}
+        {showBlueshipCase && (
+          <div onClick={closeCase} className="closebtn">
+            close
+          </div>
+        )}
+      </StyledCases>
       {showBlueshipCase && <BlueshipCase />}
-    </StyledCases>
+    </>
   );
 };
 
