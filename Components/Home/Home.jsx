@@ -11,25 +11,22 @@ import Ngo from "@/Sections/Ngo/Ngo";
 import Quote from "@/Sections/Quote/Quote";
 import Second from "@/Sections/Second/Second";
 import Service from "@/Sections/Service/Service";
-import SmoothScrolling from "@/app/SmoothScrolling";
 
 function Home() {
   return (
-    <SmoothScrolling>
-      <div>
-        <Hero />
-        <About />
-        <Second />
-        <Features />
-        <Quote />
-        <Cases />
-        <Service />
-        <ContactForm />
-        <Ngo />
-        <Faq />
-        <Footer />
-      </div>
-    </SmoothScrolling>
+    <div>
+      <Hero />
+      <About />
+      <Second />
+      <Features />
+      <Quote />
+      <Cases />
+      <Service />
+      <ContactForm />
+      <Ngo />
+      <Faq />
+      <Footer />
+    </div>
   );
 }
 
