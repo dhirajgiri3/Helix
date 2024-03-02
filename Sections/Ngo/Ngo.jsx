@@ -162,7 +162,7 @@ function Ngo() {
     }
   };
   return (
-    <StyledNgo>
+    <StyledNgo id="ngo">
       <div className="ngoleft">
         <Image
           src={ngoimage}
@@ -183,9 +183,7 @@ function Ngo() {
           software solutions (between 50% - 70% off) from Cyper Studio.
         </p>
         <div className="divider">
-          <h1 className="service-head">
-            What we offer to the changemakers!
-          </h1>
+          <h1 className="service-head">What we offer to the changemakers!</h1>
           <div className="services">
             <div className="label">NGO Management Websites</div>
             <div className="label">Fundraising & Donation Websites</div>

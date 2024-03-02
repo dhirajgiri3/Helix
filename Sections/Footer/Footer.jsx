@@ -161,6 +161,70 @@ const StyledFooter = styled.div`
 `;
 
 function Footer() {
+  const scrollToContact = () => {
+    const servicesSection = document.getElementById("contact");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        duration: "1s",
+      });
+    }
+  };
+  const scrollToServices = () => {
+    const servicesSection = document.getElementById("services");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        duration: "1s",
+      });
+    }
+  };
+
+  const scrollToFeatures = () => {
+    const servicesSection = document.getElementById("features");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        duration: "1s",
+      });
+    }
+  };
+
+  const scrollToCases = () => {
+    const servicesSection = document.getElementById("cases");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        duration: "1s",
+      });
+    }
+  };
+
+  const scrollToAboutUs = () => {
+    const servicesSection = document.getElementById("aboutus");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        duration: "1s",
+      });
+    }
+  };
+
+  const scrollToNgo = () => {
+    const servicesSection = document.getElementById("ngo");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        duration: "1s",
+      });
+    }
+  };
   return (
     <StyledFooter>
       <div className="footer-top">
@@ -170,11 +234,21 @@ function Footer() {
 
         <div className="links">
           <Link href="/">Home</Link>
-          <Link href="/about">Features</Link>
-          <Link href="/about">About</Link>
-          <Link href="/services">Services</Link>
-          <Link href="/services">Contact Us</Link>
-          <Link href="/contact">Are You a NGO?</Link>
+          <div className="link" onClick={scrollToFeatures}>
+            Features
+          </div>
+          <div className="link" onClick={scrollToAboutUs}>
+            About
+          </div>
+          <div className="link" onClick={scrollToServices}>
+            Services
+          </div>
+          <div className="link" onClick={scrollToContact}>
+            Contact Us
+          </div>
+          <div className="link" onClick={scrollToNgo}>
+            Are You a NGO?
+          </div>
         </div>
         <div className="contacts">
           <p>Connect with us</p>
