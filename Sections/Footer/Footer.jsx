@@ -262,7 +262,7 @@ function Footer() {
               <InstagramIcon />
             </a>
             <a
-              href="https://www.linkedin.com/company/cyperstudio"
+              href="https://www.linkedin.com/company/cyper-studio"
               target="_blank"
             >
               <LinkedInIcon />
