@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 import blueshipmockup from "@/Assets/Images/Mockup/blueship-mockup.png";
+import Link from "next/link";
 
 const StyledBlueshipCase = styled.div`
   height: 100%;
@@ -340,7 +341,9 @@ function BlueshipCase() {
           </div>
           <div className="cta">
             <h4>Ready to start?</h4>
-            <button>Contact us</button>
+            <Link href="/#contact">
+              <button>Contact us</button>
+            </Link>
           </div>
         </div>
         <div className="right">

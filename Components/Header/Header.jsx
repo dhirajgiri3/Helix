@@ -180,9 +180,11 @@ function Header() {
         </ul>
       </div>
       <div className="right">
-        <div onClick={scrollToContact}>
+        {/* <div onClick={scrollToContact}> */}
+        <Link href="/#contact">
           <MainButton text={"Contact Us"} />
-        </div>
+        </Link>
+        {/* </div> */}
       </div>
     </StyledHeader>
   );
