@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 import shipexmockup from "@/Assets/Images/Mockup/shipex-mockup.png";
+import Link from "next/link";
 
 const StyledShipexCase = styled.div`
   height: 100%;
