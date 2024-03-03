@@ -29,10 +29,12 @@ const StyledHeader = styled.div`
   }
 
   .left {
-    img {
-      width: 6rem;
-      height: 100%;
-      object-fit: contain;
+    a {
+      img {
+        width: 6rem;
+        height: 100%;
+        object-fit: contain;
+      }
     }
   }
   .middle {
@@ -147,7 +149,9 @@ function Header() {
   return (
     <StyledHeader>
       <div className="left">
-        <Image src={logo} alt="Helix Logo" title="Helix Logo" />
+        <Link href="/">
+          <Image src={logo} alt="Helix Logo" title="Helix Logo" />
+        </Link>
       </div>
       <div className="middle">
         <ul>
@@ -180,11 +184,9 @@ function Header() {
         </ul>
       </div>
       <div className="right">
-        {/* <div onClick={scrollToContact}> */}
         <Link href="/#contact">
           <MainButton text={"Contact Us"} />
         </Link>
-        {/* </div> */}
       </div>
     </StyledHeader>
   );

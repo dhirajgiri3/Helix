@@ -339,7 +339,9 @@ function ShipexCase() {
           </div>
           <div className="cta">
             <h4>Ready to start?</h4>
-            <button>Contact us</button>
+            <Link href="/#contact">
+              <button>Contact us</button>
+            </Link>
           </div>
         </div>
         <div className="right">
