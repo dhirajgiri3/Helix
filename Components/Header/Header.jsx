@@ -158,11 +158,11 @@ function Header() {
           <li>
             <Link href="/">Home</Link>
           </li>
-          <li>
+          {/* <li>
             <div className="link" onClick={scrollToServices}>
               Services
             </div>
-          </li>
+          </li> */}
           <li>
             <div className="link" onClick={scrollToFeatures}>
               Features
