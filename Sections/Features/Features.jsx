@@ -153,6 +153,7 @@ const StyledFeatures = styled.div`
     .third {
       grid-row: 1/3;
       grid-column: 2/3;
+      height: 100%;
       width: 100%;
       transition: all 0.3s ease-in-out;
 
