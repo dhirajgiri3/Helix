@@ -11,7 +11,7 @@ const StyledBlueshipCase = styled.div`
   background: #ffffff;
   border-radius: 1rem;
   color: var(--dark);
-  padding: 5rem;
+  padding: 5rem 7.5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -21,8 +21,9 @@ const StyledBlueshipCase = styled.div`
 
   @media screen and (max-width: 768px) {
     padding: 2.5rem 1rem;
-    width: calc(90vw + 5rem);
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    padding-top: 6rem !important;
   }
 
   &::-webkit-scrollbar {
@@ -156,19 +157,14 @@ const StyledBlueshipCase = styled.div`
 
       @media screen and (max-width: 768px) {
         width: 100%;
-        gap: 1rem;
+        gap: 2rem;
       }
 
       img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-radius: 0.5rem;
-
-        @media screen and (max-width: 768px) {
-          width: 100%;
-          height: 100%;
-        }
+        border-radius: 1rem;
       }
 
       button.visit {
@@ -181,7 +177,7 @@ const StyledBlueshipCase = styled.div`
         transition: all 0.3s ease-in-out;
         background: var(--primary);
         color: var(--white);
-        margin: 0.5rem 0;
+        margin: 1rem 0;
 
         a {
           text-decoration: none;
@@ -207,43 +203,37 @@ const StyledBlueshipCase = styled.div`
         justify-content: flex-start;
         align-items: flex-start;
         gap: 2rem;
-        padding-top: 2rem;
-
-        h3 {
-          font-size: var(--md);
-          font-weight: 700;
-          color: var(--primary);
-        }
 
         .list {
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
           align-items: flex-start;
-          gap: 1rem;
-        }
+          gap: 1.5rem;
 
-        ul {
-          width: 100%;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
-          gap: 0.7rem;
+          h3 {
+            font-size: var(--md);
+            font-weight: 700;
+            color: var(--primary);
+          }
 
-          li {
+          ul {
             width: 100%;
-            list-style: none;
-            span {
-              font-size: var(--norm);
-              font-weight: 600;
-              color: var(--dark);
-            }
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 1.5rem;
 
-            p {
-              font-size: var(--sm);
-              font-weight: 500;
-              color: var(--grey);
+            li {
+              width: 100%;
+              list-style: none;
+              line-height: 1.5;
+              span {
+                font-size: var(--norm);
+                font-weight: 600;
+                color: var(--dark);
+              }
             }
           }
         }
@@ -258,7 +248,7 @@ const StyledBlueshipCase = styled.div`
         gap: 2rem;
         padding: 3rem;
         background: #101828;
-        border-radius: 20px;
+        border-radius: 1rem;
 
         .testimonial-label {
           display: flex;
@@ -302,8 +292,9 @@ const StyledBlueshipCase = styled.div`
 
           p {
             font-size: var(--norm);
-            font-weight: 700;
+            font-weight: 600;
             color: var(--light);
+            line-height: 1.5;
           }
 
           h4 {

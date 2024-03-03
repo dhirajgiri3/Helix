@@ -115,6 +115,12 @@ const StyledFeatures = styled.div`
         padding: 1rem;
         width: 100%;
         height: 15rem;
+        overflow: hidden;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
       }
 
       .icon {
@@ -147,7 +153,6 @@ const StyledFeatures = styled.div`
     .third {
       grid-row: 1/3;
       grid-column: 2/3;
-      height: 100%;
       width: 100%;
       transition: all 0.3s ease-in-out;
 

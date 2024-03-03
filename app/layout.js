@@ -2,6 +2,7 @@ import Header from "@/Components/Header/Header";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import StyledComponentsRegistry from "./registry";
+import Footer from "@/Sections/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         <body className={inter.className}>
           <Header />
           {children}
+          <Footer />
         </body>
       </StyledComponentsRegistry>
     </html>
