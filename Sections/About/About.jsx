@@ -272,7 +272,7 @@ function About() {
         </div>
       </div>
       <div className="second div">
-        <Image src={shipimage} />
+        <Image src={shipimage} alt="Shiping Image" />
       </div>
       <div className="third div divs">
         <p>

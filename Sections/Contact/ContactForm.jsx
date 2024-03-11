@@ -176,9 +176,27 @@ function ContactForm() {
           Your Voice <span>Matters</span>
         </h1>
         <form onSubmit={handleSubmit}>
-          <input type="text" name="name" placeholder="Name" required />
-          <input type="email" name="_replyto" placeholder="Email" required />
-          <input type="tel" name="phone" placeholder="Phone Number" />
+          <input
+            aria-required
+            required
+            type="text"
+            name="name"
+            placeholder="Name"
+          />
+          <input
+            aria-required
+            required
+            type="email"
+            name="_replyto"
+            placeholder="Email"
+          />
+          <input
+            aria-required
+            required
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+          />
           <input type="text" name="company" placeholder="Company Name" />
           <textarea name="message" placeholder="Message" required></textarea>
           <MainButton

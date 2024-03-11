@@ -173,9 +173,9 @@ function Header() {
               Case Study
             </div>
           </li>
-          <li>
+          {/* <li>
             <Link href="/pricing">Pricing</Link>
-          </li>
+          </li> */}
           <li>
             <div className="link" onClick={scrollToAboutUs}>
               About Us
