@@ -68,12 +68,14 @@ const StyledFooter = styled.div`
       align-items: flex-start;
       gap: 2rem;
 
-      a {
-        font-size: var(--sm);
+      a,
+      .link {
         font-weight: 400;
         color: var(--grey);
         transition: all 0.3s ease-in-out;
         text-decoration: none;
+        cursor: pointer;
+        font-size: var(--sm);
 
         @media screen and (max-width: 768px) {
           font-size: var(--norm);
@@ -82,6 +84,10 @@ const StyledFooter = styled.div`
         &:hover {
           color: var(--primary);
         }
+      }
+
+      .link {
+        cursor: pointer;
       }
     }
 
