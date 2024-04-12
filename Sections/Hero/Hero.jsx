@@ -4,6 +4,7 @@ import React from "react";
 import styled from "styled-components";
 import helixmockup from "@/Assets/Images/Mockup/mockup-saas.png";
 import Image from "next/image";
+import Link from "next/link";
 
 const StyledHero = styled.section`
   min-height: 100vh;
@@ -148,6 +149,11 @@ const StyledHero = styled.section`
           transition: all 0.3s ease-in-out;
         }
 
+        a {
+
+          text-decoration: none;
+        }
+
         .button1 {
           border-radius: 100px;
           color: var(--white);
@@ -156,6 +162,7 @@ const StyledHero = styled.section`
           position: relative;
           transition: all 0.3s ease-in-out;
           overflow: hidden;
+          padding: 1rem 1.5rem;
         }
 
         .button1::before {
@@ -315,9 +322,9 @@ function Hero() {
         </div>
         <div className="bottom">
           <div className="cta">
-            <button className="button1" onClick={scrollToServices}>
-              Explore Helix Solutions
-            </button>
+            <Link href="/demo" className="button1">
+              View Demo
+            </Link>
             <button onClick={scrollToCases} className="button2">
               Explore our case studies
             </button>
