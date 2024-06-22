@@ -105,23 +105,23 @@ const StyledCases = styled.div`
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        gap: 1rem;
-      }
+        gap: 0.5rem;
 
-      @media screen and (max-width: 768px) {
-        h1 {
-          font-size: var(--xl);
+        @media screen and (max-width: 768px) {
+          h1 {
+            font-size: var(--xl);
+          }
         }
-      }
 
-      button {
-        padding: 1rem 2rem;
-        border: none;
-        border-radius: 100px;
-        font-size: var(--norm);
-        font-weight: 500;
-        cursor: pointer;
-        transition: 0.3s ease;
+        button {
+          padding: 1rem;
+          border: none;
+          border-radius: 100px;
+          font-size: var(--norm);
+          font-weight: 500;
+          cursor: pointer;
+          transition: 0.3s ease;
+        }
       }
     }
   }
@@ -164,14 +164,14 @@ const StyledCases = styled.div`
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        gap: 1rem;
+        gap: 0.5rem;
 
         @media screen and (max-width: 768px) {
         }
       }
 
       button {
-        padding: 1rem 2rem;
+        padding: 1rem;
         border: none;
         border-radius: 100px;
         font-size: var(--norm);

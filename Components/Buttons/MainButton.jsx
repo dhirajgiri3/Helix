@@ -10,6 +10,7 @@ const StyledMainButton = styled.button`
   transition: all 0.3s ease-in-out;
   overflow: hidden;
   cursor: pointer;
+  padding: 0.5rem 1.5rem !important;
 
   &::before {
     content: "";

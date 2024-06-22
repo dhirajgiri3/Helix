@@ -5,15 +5,20 @@ import Cases from "@/Sections/Cases/Cases";
 import ContactForm from "@/Sections/Contact/ContactForm";
 import Faq from "@/Sections/Faq/Faq";
 import Features from "@/Sections/Features/Features";
+import { AnimatedTooltipPreview } from "@/Sections/Footer/AnimatedTooltipPreview";
+import { MovingBorderDemo } from "@/Sections/Footer/MovingBorderDemo";
+import { ThreeDCardDemo } from "@/Sections/Footer/ThreeCardDemo";
 import Hero from "@/Sections/Hero/Hero";
 import Ngo from "@/Sections/Ngo/Ngo";
 import Quote from "@/Sections/Quote/Quote";
 import Second from "@/Sections/Second/Second";
 import Service from "@/Sections/Service/Service";
+import Header from "../Header/Header";
 
 function Home() {
   return (
     <div>
+      <Header />
       <Hero />
       <About />
       <Second />
@@ -24,6 +29,9 @@ function Home() {
       <ContactForm />
       <Ngo />
       <Faq />
+      {/* <ThreeDCardDemo /> */}
+      {/* <AnimatedTooltipPreview /> */}
+      {/* <MovingBorderDemo /> */}
     </div>
   );
 }

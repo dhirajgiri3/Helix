@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --text-gradient: -webkit-linear-gradient(
     70deg,
@@ -10,8 +14,8 @@
   --gradient-hover: -webkit-linear-gradient(40deg, #2048fc, #385bf9, #385cf9);
   --primary: #385cf9;
   --secondary: #1b45ff;
-  --dark: #1f1f1f;
-  --grey: #333333;
+  --dark: #111111;
+  --grey: #121314;
   --lgrey: #777777;
   --dark-white: #cccccc;
   --light: #eeeeee;
@@ -21,6 +25,7 @@
   --sm: 0.8rem;
   --norm: 1rem;
   --md: 1.2rem;
+  --smd: 1.5rem;
   --lg: 1.8rem;
   --xl: 2.4rem;
   --xxl: 3.2rem;

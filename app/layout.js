@@ -1,8 +1,8 @@
-import Header from "@/Components/Header/Header";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import StyledComponentsRegistry from "./registry";
 import Footer from "@/Sections/Footer/Footer";
+import ThemeProvider from "@/styles/ThemeProvider"; // Ensure the correct path
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,9 +19,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <StyledComponentsRegistry>
         <body className={inter.className}>
-          <Header />
-          {children}
-          <Footer />
+          <ThemeProvider>
+            {children}
+            <Footer />
+          </ThemeProvider>
         </body>
       </StyledComponentsRegistry>
     </html>

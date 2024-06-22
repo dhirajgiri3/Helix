@@ -5,6 +5,7 @@ import styled from "styled-components";
 import helixmockup from "@/Assets/Images/Mockup/mockup-saas.png";
 import Image from "next/image";
 import Link from "next/link";
+import { Trusted } from "./Trusted";
 
 const StyledHero = styled.section`
   min-height: 100vh;
@@ -47,14 +48,11 @@ const StyledHero = styled.section`
         border: 1px solid var(--black);
         outline: none;
         border-radius: 100px;
-        padding: 0.3rem 0.8rem;
-        background: var(--black);
+        padding: 0.3rem;
+        background: var(--dark);
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 0.5rem;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
         transition: all 0.3s ease-in-out;
 
         @media screen and (max-width: 768px) {
@@ -62,7 +60,7 @@ const StyledHero = styled.section`
         }
 
         &:hover {
-          opacity: 0.8;
+          background: var(--black);
         }
 
         p {
@@ -150,7 +148,6 @@ const StyledHero = styled.section`
         }
 
         a {
-
           text-decoration: none;
         }
 
@@ -302,11 +299,7 @@ function Hero() {
       <div className="herocontainer">
         <div className="top">
           <div className="label">
-            <p>Trusted by Industry Players</p>
-            <img
-              src="https://firebasestorage.googleapis.com/v0/b/cyper-studio-saas.appspot.com/o/stars.png?alt=media&token=4c19c197-e1d7-4518-9e6a-43a7e5518df6"
-              alt="cyper studio stars"
-            />
+            <Trusted />
           </div>
         </div>
         <div className="middle">

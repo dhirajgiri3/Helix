@@ -123,6 +123,8 @@ const StyledContactForm = styled.div`
         }
       }
 
+      
+
       textarea {
         height: 10rem;
         resize: none;
