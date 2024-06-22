@@ -3,6 +3,7 @@ import styled from "styled-components";
 import ngoimage from "@/Assets/Images/NGO/NGO.png";
 import Image from "next/image";
 import MainButton from "@/Components/Buttons/MainButton";
+import Link from "next/link";
 
 const StyledNgo = styled.div`
   width: 100%;
@@ -192,8 +193,10 @@ function Ngo() {
             <div className="label">Resource Sharing Platforms</div>
           </div>
         </div>
-        <div className="cta" onClick={scrollToContact}>
-          <MainButton text={"Contact Us"} />
+        <div className="cta">
+          <Link href="contact">
+            <MainButton text={"Contact Us"} />
+          </Link>
         </div>
       </div>
     </StyledNgo>

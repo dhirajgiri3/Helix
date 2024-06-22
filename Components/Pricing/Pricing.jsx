@@ -7,8 +7,8 @@ import Offer from "./Sections/Offer/Offer";
 import PricingTable from "./Sections/PricingTier/PricingTier";
 import PricingMobile from "./Sections/PricingTier/PricingMobile";
 import styled from "styled-components";
-import CTA from "./CTA/CTA";
-import { BackgroundBeamsDemo } from "./Sections/Hero/BackgroundBeamsDemo";
+import { BackgroundBeamsDemo } from "./Sections/Animations/BackgroundBeamsDemo";
+import ContactForm from "./Sections/Contact/ContactForm";
 
 const PricingStyled = styled.div`
   .laptop {
@@ -38,6 +38,7 @@ function Pricing() {
         <PricingMobile />
       </div>
       <BackgroundBeamsDemo />
+      <ContactForm />
     </PricingStyled>
   );
 }

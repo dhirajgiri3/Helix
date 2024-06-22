@@ -6,7 +6,7 @@ import styled from "styled-components";
 import MainButton from "../Buttons/MainButton";
 import logo from "@/Assets/Images/Logo/Helix-logo.png";
 import Image from "next/image";
-import { LinkPreview } from "../Pricing/ui/link-preview";
+import { LinkPreview } from "../Pricing/Sections/Animations/ui/link-preview";
 
 const StyledHeader = styled.div`
   width: 100vw;
@@ -212,7 +212,7 @@ function Header() {
       </div>
       <div className="right">
         <LinkPreview
-          url="https://helix.cyper.studio/#contact"
+          url="https://helix.cyper.studio/contact"
           className="link-text"
         >
           <div className="link" onClick={scrollToContact}>

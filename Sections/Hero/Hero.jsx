@@ -45,11 +45,12 @@ const StyledHero = styled.section`
 
       .label {
         text-align: center;
-        border: 1px solid var(--black);
+        border: 1px solid rgba(231, 241, 255);
         outline: none;
         border-radius: 100px;
         padding: 0.3rem;
-        background: var(--dark);
+        background: rgba(231, 241, 255, 0.7);
+        backdrop-filter: blur(10px);
         display: flex;
         justify-content: center;
         align-items: center;

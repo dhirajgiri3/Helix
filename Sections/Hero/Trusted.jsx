@@ -5,7 +5,13 @@ import { Button } from "../ui/moving-border";
 export function Trusted() {
   return (
     <div>
-      <Button borderRadius="1.75rem">Trusted by industry players</Button>
+      <Button
+        borderRadius="1.75rem"
+        backgroundcolor= "#000000bf"
+        textcolor="var(--white)"
+      >
+        Trusted by industry players
+      </Button>
     </div>
   );
 }

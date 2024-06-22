@@ -1,12 +1,13 @@
 "use client";
 import React from "react";
 import styled from "styled-components";
-import { Boxes } from "../../ui/background-boxes.jsx";
-import { FlipWordsDemo } from "../../Flipwords/FlipWordsDemo.jsx";
-import Getstarted from "../../Buttons/Getstarted.jsx";
-import { AnimatedTooltipPreview } from "./AnimatedTooltipPreview.jsx";
-import { CardHoverEffectDemo } from "./CardHoverEffectDemo.jsx";
-import { InfiniteMovingCardsDemo } from "./InfiniteMovingCardsDemo.jsx";
+import { Boxes } from "../Animations/ui/background-boxes.jsx";
+import Getstarted from "../Buttons/Getstarted.jsx";
+import { AnimatedTooltipPreview } from "../Animations/AnimatedTooltipPreview.jsx";
+import { CardHoverEffectDemo } from "../Animations/CardHoverEffectDemo.jsx";
+import { InfiniteMovingCardsDemo } from "../Animations/InfiniteMovingCardsDemo.jsx";
+import { FlipWordsDemo } from "../Animations/FlipWordsDemo.jsx";
+import Link from "next/link.js";
 
 const Overlay = styled.div`
   position: absolute;
@@ -67,7 +68,10 @@ export function Hero() {
           Aggregator Software for Businesses of All Sizes
         </p>
         <AnimatedTooltipPreview />
-        <Getstarted text={"Get Started"} />
+        <Link href="/contact">
+          <Getstarted text={"Get Started"} />
+        </Link>
+
         <CardHoverEffectDemo />
         <InfiniteMovingCardsDemo />
       </Heading>

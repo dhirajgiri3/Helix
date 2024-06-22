@@ -42,17 +42,18 @@ const ChildDiv = styled.div`
 
 const ContentDiv = styled.div`
   position: relative;
-  background: rgba(0, 0, 0, 0.7);
-  border: 2px solid var(--primary);
+  background: ${({ backgroundcolor }) => backgroundcolor};
   backdrop-filter: blur(20px);
-  color: white;
+  border: 1px solid var(--primary);
+  color: ${({ textcolor }) => textcolor};
+  font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   padding: 0.5rem 1rem;
-  font-size: 0.8rem;
+  font-size: var(--sm);
   ${({ borderRadius }) => css`
     border-radius: calc(${borderRadius} * 0.96);
   `}
@@ -61,6 +62,8 @@ const ContentDiv = styled.div`
 export function Button({
   borderRadius = "1.75rem",
   children,
+  backgroundcolor,
+  textcolor,
   containerClassName,
   borderClassName,
   duration,
@@ -78,7 +81,12 @@ export function Button({
           <ChildDiv className={borderClassName} />
         </MovingBorder>
       </InnerDiv>
-      <ContentDiv className={className} borderRadius={borderRadius}>
+      <ContentDiv
+        className={className}
+        borderRadius={borderRadius}
+        backgroundcolor={backgroundcolor}
+        textcolor={textcolor}
+      >
         {children}
       </ContentDiv>
     </Container>

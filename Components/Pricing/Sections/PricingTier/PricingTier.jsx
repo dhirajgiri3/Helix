@@ -1,8 +1,10 @@
 "use client";
 
-import styled, { keyframes } from "styled-components";
-import React from "react";
+import { Button } from "@/Sections/ui/moving-border";
+import React, { useState } from "react";
+import styled from "styled-components";
 
+// Styled component for Pricing Table
 const StyledPricingTable = styled.div`
   width: 100%;
   height: 100%;
@@ -37,6 +39,12 @@ const StyledPricingTable = styled.div`
       }
     }
 
+    .subtogglebuttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
     h2 {
       font-size: var(--xl);
       color: var(--white);
@@ -44,36 +52,40 @@ const StyledPricingTable = styled.div`
       padding: 1rem 0;
     }
 
-    button {
-      background: var(--secondary);
-      font-size: var(--lg);
-      color: var(--white);
-      padding: 15px 30px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s ease-in-out;
-    }
-
     table {
       width: 100%;
       border-collapse: collapse;
+      transition: all 0.3s ease;
+
+      th,
+      td {
+        font-size: var(--sm);
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #181920;
+        transition: all 0.3s ease;
+      }
 
       th {
         font-size: var(--md);
-        color: var(--light);
-        text-align: center;
-        padding: 2rem 10px;
-        border-left: none;
-        border-right: none;
         font-weight: 700;
+        color: var(--light);
+        padding: 1rem;
 
         .text {
+          width: 100%;
+          height: 100%;
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
-          flex-direction: column;
-          gap: 0.5rem;
+          gap: 1rem;
 
+          .span {
+            background: var(--primary);
+            padding: 0.3rem 1rem;
+            border-radius: 100px;
+          }
           p {
             font-size: var(--sm);
             font-weight: 500;
@@ -83,25 +95,13 @@ const StyledPricingTable = styled.div`
       }
 
       td {
-        font-size: var(--sm);
-        color: var(--white) !important;
-        padding: 10px;
-        text-align: center;
-        border: 1px solid #181920;
-        border-left: none;
-        border-right: none;
         font-weight: 300;
-
-        &:nth-child(1) {
-          text-align: left;
-        }
+        color: var(--white) !important;
       }
 
-      th:nth-child(1) {
+      th:nth-child(1),
+      td:nth-child(1) {
         text-align: left;
-      }
-
-      th:nth-child(5) {
       }
 
       td:nth-child(4),
@@ -115,33 +115,23 @@ const StyledPricingTable = styled.div`
         border-top: none;
       }
 
-      tbody {
-        tr {
-          td {
-            color: var(--light) !important;
-          }
-          .bld {
-            font-weight: 700;
-            font-size: var(--sm);
-            color: var(--light) !important;
-          }
+      tbody tr td {
+        color: var(--light) !important;
+      }
+
+      tbody tr .bld {
+        font-weight: 700;
+        font-size: var(--sm);
+        color: var(--light) !important;
+      }
+
+      tr {
+        .price {
+          font-size: var(--md);
+          font-weight: 700;
+          color: var(--white);
         }
       }
-    }
-
-    .slider {
-      background: var(--light);
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-    }
-
-    .slide {
-      font-size: var(--norm);
-      color: var(--dark);
-      padding: 10px;
-      margin: 10px;
-      border-bottom: 1px solid var(--light);
     }
   }
 
@@ -176,12 +166,141 @@ const StyledPricingTable = styled.div`
   }
 `;
 
+// Styled component for Label
+const Label = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  .app {
+    font-size: var(--md);
+    font-weight: 700;
+  }
+
+  .switch {
+    --secondary-container: #0d2047;
+    --primary: #4f70ff;
+    font-size: var(--norm);
+    position: relative;
+    display: inline-block;
+    width: 3.7rem;
+    height: 1.8rem;
+  }
+
+  .switch input {
+    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary);
+    transition: 0.5s;
+    border-radius: 30px;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 20px;
+    left: 0.2rem;
+    bottom: 0.2rem;
+    background-color: var(--light);
+    transition: 0.5s;
+  }
+
+  input:checked + .slider:before {
+    background-color: #4f70ff;
+  }
+
+  input:checked + .slider {
+    background-color: #121a3e;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #121a3e;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(2.7rem);
+  }
+
+  .switch {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    width: 50%;
+    justify-content: center;
+  }
+
+  span {
+    width: 50%;
+    font-size: var(--sm) !important;
+    color: var(--dark-white);
+    display: flex;
+    justify-content: center;
+  }
+`;
+
+// Styled component for Button
+const StyledButton = styled(Button)`
+  border-radius: 1.75rem;
+  background-color: ${({ active }) =>
+    active ? "#385bf9dd" : "transparent"};
+  color: var(--white);
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: var(--secondary);
+  }
+`;
+
+// PricingTier component
 function PricingTier() {
+  const [isYearly, setIsYearly] = useState(false);
+  const [professionalWithApp, setProfessionalWithApp] = useState(false);
+  const [enterpriseWithApp, setEnterpriseWithApp] = useState(false);
+
+  const monthlyPrices = {
+    starter: 4999,
+    essential: 12999,
+    professional: professionalWithApp ? 16499 : 13999,
+    enterprise: enterpriseWithApp ? 31499 : 28999,
+  };
+
+  const yearlyPrices = Object.keys(monthlyPrices).reduce((acc, key) => {
+    acc[key] = Math.round((monthlyPrices[key] * 12 * 0.9) / 12); // 10% discount
+    return acc;
+  }, {});
+
+  const prices = isYearly ? yearlyPrices : monthlyPrices;
+
   return (
     <StyledPricingTable>
       <section className="pricing-table">
         <div className="heading">
           <h3>Pricing</h3>
+        </div>
+        <div className="subtogglebuttons">
+          <StyledButton active={!isYearly} onClick={() => setIsYearly(false)}>
+            Monthly
+          </StyledButton>
+          <StyledButton active={isYearly} onClick={() => setIsYearly(true)}>
+            Annually Save 10%
+          </StyledButton>
         </div>
         <table>
           <thead>
@@ -200,16 +319,52 @@ function PricingTier() {
                 </div>
               </th>
               <th>
-                {" "}
                 <div className="text">
-                  Professional Tier (Recomended) <br />
+                  Professional Tier{" "}
+                  <Button
+                    borderRadius="1.75rem"
+                    backgroundcolor="#385cf9cf"
+                    textcolor="var(--white)"
+                  >
+                    Recomended
+                  </Button>
                   <p>Best Value Option</p>
+                  <Label>
+                    <label className="switch">
+                      <input
+                        type="checkbox"
+                        checked={professionalWithApp}
+                        onChange={() =>
+                          setProfessionalWithApp(!professionalWithApp)
+                        }
+                      />
+                      <span className="slider"></span>
+                    </label>
+                    <span className="app">
+                      {professionalWithApp ? "With App" : "Without App"}
+                    </span>
+                  </Label>
                 </div>
               </th>
               <th>
                 <div className="text">
                   Enterprise Tier <br />
                   <p>Customized Solutions for Large Businesses</p>
+                  <Label>
+                    <label className="switch">
+                      <input
+                        type="checkbox"
+                        checked={enterpriseWithApp}
+                        onChange={() =>
+                          setEnterpriseWithApp(!enterpriseWithApp)
+                        }
+                      />
+                      <span className="slider"></span>
+                    </label>
+                    <span className="app">
+                      {enterpriseWithApp ? "With App" : "Without App"}
+                    </span>
+                  </Label>
                 </div>
               </th>
             </tr>
@@ -217,10 +372,10 @@ function PricingTier() {
           <tbody>
             <tr>
               <td className="bld">Price</td>
-              <td>₹4,999/month</td>
-              <td>₹12,999/month</td>
-              <td>₹16,499/month</td>
-              <td>₹31,499/month</td>
+              <td className="price">₹{prices.starter}/month</td>
+              <td className="price">₹{prices.essential}/month</td>
+              <td className="price">₹{prices.professional}/month</td>
+              <td className="price">₹{prices.enterprise}/month</td>
             </tr>
             <tr>
               <td className="bld">Setup Fee</td>

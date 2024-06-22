@@ -1,7 +1,8 @@
 import React from "react";
 import { Button } from "@/Sections/ui/moving-border";
 import styled from "styled-components";
-import Getstarted from "../../Buttons/Getstarted";
+import Getstarted from "../Buttons/Getstarted";
+import Link from "next/link";
 
 const OfferLeftStyle = styled.div`
   width: 100%;
@@ -82,7 +83,9 @@ function Left() {
         </p>
       </div>
       <div className="offer-cta">
-        <Getstarted text={"Try Free Trial"} />
+        <Link href="/contact">
+          <Getstarted text={"Try Free Trial"} />
+        </Link>
       </div>
     </OfferLeftStyle>
   );

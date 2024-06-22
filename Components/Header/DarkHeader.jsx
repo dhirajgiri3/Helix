@@ -6,7 +6,7 @@ import styled from "styled-components";
 import MainButton from "../Buttons/MainButton";
 import logo from "@/Assets/Images/Logo/Helix-logo.png";
 import Image from "next/image";
-import { LinkPreview } from "@/Components/Pricing/ui/link-preview.jsx";
+import { LinkPreview } from "@/Components/Pricing/Sections/Animations/ui/link-preview.jsx";
 
 const StyledHeader = styled.div`
   width: 100vw;
