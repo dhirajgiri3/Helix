@@ -20,10 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <StyledComponentsRegistry>
         <body className={inter.className}>
-          <ThemeProvider>
-            {children}
-      
-          </ThemeProvider>
+          <ThemeProvider>{children}</ThemeProvider>
         </body>
       </StyledComponentsRegistry>
     </html>

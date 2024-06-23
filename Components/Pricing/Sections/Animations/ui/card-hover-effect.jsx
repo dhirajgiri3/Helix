@@ -11,7 +11,8 @@ const Grid = styled.div`
   padding: 2.5rem 0;
   justify-content: space-between;
   align-items: center;
-  height: 85vh;
+  place-items: center;
+  height: 75vh;
 
   @media (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);

@@ -38,7 +38,6 @@ function Pricing() {
         <PricingMobile />
       </div>
       <BackgroundBeamsDemo />
-      <ContactForm />
     </PricingStyled>
   );
 }

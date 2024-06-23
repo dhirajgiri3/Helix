@@ -5,6 +5,7 @@ import { HoverEffect } from "./ui/card-hover-effect.jsx";
 const Container = styled.div`
   margin: 0 auto;
   padding: 1rem 5rem;
+  padding-bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;

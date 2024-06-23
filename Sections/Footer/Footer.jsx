@@ -10,7 +10,6 @@ import Image from "next/image";
 import logo from "@/Assets/Images/Logo/Helix-logo.png";
 import Link from "next/link";
 
-
 const StyledFooter = styled.div`
   width: 100%;
   height: 100%;
@@ -64,10 +63,18 @@ const StyledFooter = styled.div`
 
     .links {
       display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
+      justify-content: space-around;
       align-items: flex-start;
       gap: 2rem;
+      width: 100%;
+
+      .sublink {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1rem;
+      }
 
       a,
       .link {
@@ -243,21 +250,27 @@ function Footer() {
         </div>
 
         <div className="links">
-          <Link href="/">Home</Link>
-          <div className="link" onClick={scrollToFeatures}>
-            Features
+          <div className="sublink">
+            <Link href="/">Home</Link>
+            <div className="link" onClick={scrollToFeatures}>
+              Features
+            </div>
+            <div className="link" onClick={scrollToAboutUs}>
+              About
+            </div>
           </div>
-          <div className="link" onClick={scrollToAboutUs}>
-            About
-          </div>
-          <div className="link" onClick={scrollToServices}>
-            Services
-          </div>
-          <div className="link" onClick={scrollToContact}>
-            Contact Us
-          </div>
-          <div className="link" onClick={scrollToNgo}>
-            Are You a NGO?
+          <div>
+            <div className="sublink">
+              <div className="link" onClick={scrollToServices}>
+                Services
+              </div>
+              <div className="link" onClick={scrollToContact}>
+                Contact Us
+              </div>
+              <div className="link" onClick={scrollToNgo}>
+                Are You a NGO?
+              </div>
+            </div>
           </div>
         </div>
         <div className="contacts">
