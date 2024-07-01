@@ -3,7 +3,6 @@
 import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
-import MainButton from "../Buttons/MainButton";
 import logo from "@/Assets/Images/Logo/Helix-logo.png";
 import Image from "next/image";
 import { LinkPreview } from "../Pricing/Sections/Animations/ui/link-preview";
@@ -233,18 +232,13 @@ function Header() {
         </ul>
       </div>
       <div className="right">
-        <LinkPreview
-          url="https://helix.cyper.studio/pricing"
-          className="link-text"
-        >
-          <div className="link button-link pricing">Pricing</div>
-        </LinkPreview>
-        <LinkPreview
-          url="https://helix.cyper.studio/contact"
-          className="link-text"
-        >
-          <div className="link button-link">Contact Sales</div>
-        </LinkPreview>
+        <div className="link button-link pricing">
+          <Link href="/pricing">Pricing</Link>
+        </div>
+
+        <div className="link button-link">
+          <Link href="/contact">Contact Sales</Link>
+        </div>
       </div>
     </StyledHeader>
   );
