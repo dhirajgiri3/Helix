@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const StyledMainButton = styled.button`
+const StyledMainButton = styled.div`
   border-radius: 100px;
   color: var(--white);
   z-index: 1;

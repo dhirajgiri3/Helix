@@ -7,7 +7,6 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --gray-200: #e5e7eb;
     --sky-500: #00bbff;
-    // Add other necessary variables
   }
   body {
     background-color: ${({ theme }) => theme.bodyBg};
