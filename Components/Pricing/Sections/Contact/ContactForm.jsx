@@ -5,6 +5,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import styled from "styled-components";
 import Getstarted from "../Buttons/Getstarted";
 import ThankYou from "../components/Thankyou";
+import Link from "next/link";
 
 const FormContainer = styled.div`
   background-color: var(--grey);
@@ -143,7 +144,7 @@ const ContactForm = () => {
               field="email"
               errors={state.errors}
             />
-          </div>{" "}
+          </div>
           <div>
             <Label htmlFor="phone">Phone Number</Label>
             <InputField
@@ -176,7 +177,6 @@ const ContactForm = () => {
             />
           </div>
           <div>
-            {" "}
             <Label htmlFor="size">Size (Number of Employees)</Label>
             <InputField
               id="size"
@@ -248,7 +248,7 @@ const ContactForm = () => {
               field="carriers"
               errors={state.errors}
             />
-          </div>{" "}
+          </div>
           <div>
             <Label htmlFor="mainCarriers">Main Carriers</Label>
             <InputField
@@ -263,7 +263,7 @@ const ContactForm = () => {
               field="mainCarriers"
               errors={state.errors}
             />
-          </div>{" "}
+          </div>
           <div>
             <Label htmlFor="types">Types of Shipments</Label>
             <InputField
@@ -278,7 +278,7 @@ const ContactForm = () => {
               field="types"
               errors={state.errors}
             />
-          </div>{" "}
+          </div>
           <div>
             <Label htmlFor="investment">
               Willingness to Invest in Business

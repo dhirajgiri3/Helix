@@ -80,14 +80,35 @@ const StyledHeader = styled.div`
     }
   }
   .right {
-    button {
-      padding: 0.8rem 1.6rem;
-      border: none;
-      border-radius: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+
+    .button-link {
+      background-color: var(--primary);
+      color: var(--white);
+      &:hover {
+        background-color: var(--secondary);
+      }
+      padding: 0.5rem 1.3rem;
       font-size: 0.95rem;
       font-weight: 500;
-      cursor: pointer;
       transition: all 0.3s ease-in-out;
+      border-radius: 3rem;
+      cursor: pointer;
+
+      @media screen and (max-width: 767px) {
+        padding: 0.4rem 0.8rem;
+      }
+    }
+
+    .pricing {
+      display: none;
+
+      @media screen and (max-width: 767px) {
+        display: block;
+      }
     }
   }
 `;
@@ -211,14 +232,13 @@ function Header() {
         </ul>
       </div>
       <div className="right">
-        <LinkPreview
-          href="https://helix.cyper.studio/#contact"
-          className="link-text"
-        >
-          <div className="link" onClick={scrollToContact}>
-            <MainButton text={"Contact Sales"} />
-          </div>
-        </LinkPreview>
+        <div className="link button-link pricing">
+          <a href="/pricing">Pricing</a>
+        </div>
+
+        <div className="link button-link">
+          <a href="/contact">Contact Sales</a>
+        </div>
       </div>
     </StyledHeader>
   );

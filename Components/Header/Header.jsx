@@ -233,11 +233,11 @@ function Header() {
       </div>
       <div className="right">
         <div className="link button-link pricing">
-          <Link href="/pricing">Pricing</Link>
+          <a href="/pricing">Pricing</a>
         </div>
 
         <div className="link button-link">
-          <Link href="/contact">Contact Sales</Link>
+          <a href="/contact">Contact Sales</a>
         </div>
       </div>
     </StyledHeader>
