@@ -68,9 +68,9 @@ export function Hero() {
           Aggregator Software for Businesses of All Sizes
         </p>
         <AnimatedTooltipPreview />
-        <Link href="/contact">
+        <a href="/contact">
           <Getstarted text={"Get Started"} />
-        </Link>
+        </a>
 
         <CardHoverEffectDemo />
         <InfiniteMovingCardsDemo />
