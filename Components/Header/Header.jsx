@@ -9,7 +9,7 @@ import { LinkPreview } from "../Pricing/Sections/Animations/ui/link-preview";
 
 const StyledHeader = styled.div`
   width: 100vw;
-  height: 10vh;
+  height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +21,7 @@ const StyledHeader = styled.div`
 
   @media screen and (max-width: 768px) {
     padding: 0 2rem;
-    height: 8vh;
+
   }
 
   @media screen and (max-width: 480px) {

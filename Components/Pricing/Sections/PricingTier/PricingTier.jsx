@@ -322,7 +322,7 @@ function PricingTier() {
                 <div className="text">
                   Professional Tier{" "}
                   <Button
-                    borderRadius="1.75rem"
+                   
                     backgroundcolor="#385cf9cf"
                     textcolor="var(--white)"
                   >

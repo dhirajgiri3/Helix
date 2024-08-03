@@ -1,17 +1,21 @@
 "use client";
 import React from "react";
-import { Button } from "../ui/moving-border";
+import styled from "styled-components";
+
+const TrustButton = styled.div`
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  font-size: var(--sm);
+`
 
 export function Trusted() {
   return (
     <div>
-      <Button
-        borderRadius="1.75rem"
-        backgroundcolor= "#000000bf"
-        textcolor="var(--white)"
-      >
+      <TrustButton>
         Trusted by industry players
-      </Button>
+      </TrustButton>
     </div>
   );
 }

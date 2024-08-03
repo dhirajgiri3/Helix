@@ -1,4 +1,4 @@
-// File: C:\Users\dhira\Documents\SaaS Cyper studio\helix\app\layout.js
+// File: /Users/dhirajgiri/Desktop/Cyper Studio/Helix/app/layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

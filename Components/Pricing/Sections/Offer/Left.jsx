@@ -58,7 +58,7 @@ function Left() {
   return (
     <OfferLeftStyle>
       <div className="lable">
-        <Button borderRadius="1.75rem">
+        <Button>
           <div className="text">
             <img
               className="offer-image"

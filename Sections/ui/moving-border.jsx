@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import {
   motion,
   useAnimationFrame,
@@ -16,17 +16,11 @@ const Container = styled.button`
   font-size: 1.25rem;
   padding: 1px;
   overflow: hidden;
-  ${({ borderRadius }) => css`
-    border-radius: ${borderRadius};
-  `}
 `;
 
 const InnerDiv = styled.div`
   position: absolute;
   inset: 0;
-  ${({ borderRadius }) => css`
-    border-radius: calc(${borderRadius} * 0.96);
-  `}
 `;
 
 const ChildDiv = styled.div`
@@ -54,13 +48,9 @@ const ContentDiv = styled.div`
   height: 100%;
   padding: 0.5rem 1rem;
   font-size: var(--sm);
-  ${({ borderRadius }) => css`
-    border-radius: calc(${borderRadius} * 0.96);
-  `}
 `;
 
 export function Button({
-  borderRadius = "1.75rem",
   children,
   backgroundcolor,
   textcolor,
@@ -71,19 +61,14 @@ export function Button({
   ...otherProps
 }) {
   return (
-    <Container
-      borderRadius={borderRadius}
-      className={containerClassName}
-      {...otherProps}
-    >
-      <InnerDiv borderRadius={borderRadius}>
+    <Container className={containerClassName} {...otherProps}>
+      <InnerDiv>
         <MovingBorder duration={duration} rx="30%" ry="30%">
           <ChildDiv className={borderClassName} />
         </MovingBorder>
       </InnerDiv>
       <ContentDiv
         className={className}
-        borderRadius={borderRadius}
         backgroundcolor={backgroundcolor}
         textcolor={textcolor}
       >

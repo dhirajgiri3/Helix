@@ -9,7 +9,6 @@ import {
   useSpring,
 } from "framer-motion";
 import styled from "styled-components";
-import { cn } from "@/utils/cn";
 
 const TooltipContainer = styled.div`
   margin-right: -1rem; /* -mr-4 */

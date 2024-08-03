@@ -8,7 +8,6 @@ import PricingTable from "./Sections/PricingTier/PricingTier";
 import PricingMobile from "./Sections/PricingTier/PricingMobile";
 import styled from "styled-components";
 import { BackgroundBeamsDemo } from "./Sections/Animations/BackgroundBeamsDemo";
-import ContactForm from "./Sections/Contact/ContactForm";
 
 const PricingStyled = styled.div`
   .laptop {
