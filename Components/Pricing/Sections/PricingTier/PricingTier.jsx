@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/Sections/ui/moving-border";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 // Styled component for Pricing Table
@@ -257,7 +257,7 @@ const Label = styled.div`
 const StyledButton = styled(Button)`
   border-radius: 1.75rem;
   background-color: ${({ active }) =>
-    active ? "#385bf9dd" : "transparent"};
+    active === "true" ? "#385bf9dd" : "transparent"};
   color: var(--white);
   padding: 0.5rem 1.5rem;
   cursor: pointer;
@@ -273,12 +273,21 @@ function PricingTier() {
   const [isYearly, setIsYearly] = useState(false);
   const [professionalWithApp, setProfessionalWithApp] = useState(false);
   const [enterpriseWithApp, setEnterpriseWithApp] = useState(false);
+  const [hydrated, setHydrated] = useState(false);
+
+  useEffect(() => {
+    setHydrated(true);
+  }, []);
+
+  if (!hydrated) {
+    return null;
+  }
 
   const monthlyPrices = {
     starter: 4999,
-    essential: 12999,
-    professional: professionalWithApp ? 16499 : 13999,
-    enterprise: enterpriseWithApp ? 31499 : 28999,
+    essential: 11999,
+    professional: professionalWithApp ? 16499 : 12999,
+    enterprise: enterpriseWithApp ? 28499 : 24999,
   };
 
   const yearlyPrices = Object.keys(monthlyPrices).reduce((acc, key) => {
@@ -295,10 +304,10 @@ function PricingTier() {
           <h3>Pricing</h3>
         </div>
         <div className="subtogglebuttons">
-          <StyledButton active={!isYearly} onClick={() => setIsYearly(false)}>
+          <StyledButton active={String(!isYearly)} onClick={() => setIsYearly(false)}>
             Monthly
           </StyledButton>
-          <StyledButton active={isYearly} onClick={() => setIsYearly(true)}>
+          <StyledButton active={String(isYearly)} onClick={() => setIsYearly(true)}>
             Annually Save 10%
           </StyledButton>
         </div>
@@ -309,24 +318,23 @@ function PricingTier() {
               <th>
                 <div className="text">
                   Starter Tier <br />
-                  <p>Perfect for Startups & small businesses</p>
+                  <p>₹4,999 + 18% GST</p>
                 </div>
               </th>
               <th>
                 <div className="text">
                   Essential Tier <br />
-                  <p>Ideal for Growing Businesses</p>
+                  <p>₹11,999 + 18% GST</p>
                 </div>
               </th>
               <th>
                 <div className="text">
                   Professional Tier{" "}
                   <Button
-                   
                     backgroundcolor="#385cf9cf"
                     textcolor="var(--white)"
                   >
-                    Recomended
+                    Recommended
                   </Button>
                   <p>Best Value Option</p>
                   <Label>
@@ -379,10 +387,10 @@ function PricingTier() {
             </tr>
             <tr>
               <td className="bld">Setup Fee</td>
-              <td>₹19,999</td>
-              <td>₹23,999</td>
-              <td>₹24,999</td>
-              <td>₹29,999</td>
+              <td>₹19,999 + 18% GST</td>
+              <td>₹19,999 + 18% GST</td>
+              <td>₹19,999 + 18% GST</td>
+              <td>₹19,999 + 18% GST</td>
             </tr>
             <tr>
               <td className="bld">Dashboard & Analytics</td>
@@ -394,8 +402,8 @@ function PricingTier() {
             <tr>
               <td className="bld">User Management</td>
               <td>Limited to 100 users</td>
+              <td>Up to 300 users</td>
               <td>Up to 500 users</td>
-              <td>Unlimited</td>
               <td>Unlimited</td>
             </tr>
             <tr>
@@ -407,24 +415,24 @@ function PricingTier() {
             </tr>
             <tr>
               <td className="bld">NDR Management</td>
-              <td>&#10006;</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
+              <td>✖</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
             </tr>
             <tr>
               <td className="bld">COD Shipments Management</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
             </tr>
             <tr>
               <td className="bld">Coupon Code Management</td>
-              <td>&#10006;</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
+              <td>✖</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
             </tr>
             <tr>
               <td className="bld">Communication Tools</td>
@@ -435,45 +443,108 @@ function PricingTier() {
             </tr>
             <tr>
               <td className="bld">Priority Support</td>
-              <td>&#10006;</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
-              <td>High-Level Support</td>
+              <td>✖</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>24/7 High-Level Support</td>
             </tr>
             <tr>
               <td className="bld">Real-Time Tracking</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
             </tr>
             <tr>
               <td className="bld">Automated Invoice Generation</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
             </tr>
             <tr>
               <td className="bld">Customer Feedback System</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
             </tr>
             <tr>
               <td className="bld">Multi-Language Support</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
             </tr>
             <tr>
               <td className="bld">Mobile App</td>
-              <td>&#10006;</td>
-              <td>&#10006;</td>
-              <td>&#x2714;</td>
-              <td>&#x2714;</td>
+              <td>✖</td>
+              <td>✖</td>
+              <td>✔</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td className="bld">Support Channels</td>
+              <td>Email support only</td>
+              <td>Email and chat support</td>
+              <td>Email, chat, and phone support</td>
+              <td>24/7 support via all channels</td>
+            </tr>
+            <tr>
+              <td className="bld">Onboarding</td>
+              <td>Self-service onboarding guide</td>
+              <td>Assisted onboarding with training sessions</td>
+              <td>Comprehensive onboarding with dedicated training</td>
+              <td>In-depth training sessions and onboarding support</td>
+            </tr>
+            <tr>
+              <td className="bld">Dedicated Account Manager</td>
+              <td>✖</td>
+              <td>✖</td>
+              <td>✖</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td className="bld">Custom Feature Development</td>
+              <td>✖</td>
+              <td>✖</td>
+              <td>✖</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td className="bld">Advanced Security & Compliance</td>
+              <td>✖</td>
+              <td>✖</td>
+              <td>✖</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td className="bld">Custom Branding Options</td>
+              <td>✖</td>
+              <td>✖</td>
+              <td>✖</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td className="bld">Comprehensive Training & Onboarding</td>
+              <td>✖</td>
+              <td>✖</td>
+              <td>✖</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td className="bld">Advanced Analytics & Reporting</td>
+              <td>✖</td>
+              <td>✖</td>
+              <td>✖</td>
+              <td>✔</td>
+            </tr>
+            <tr>
+              <td className="bld">Higher API Rate Limits</td>
+              <td>✖</td>
+              <td>✖</td>
+              <td>✖</td>
+              <td>✔</td>
             </tr>
           </tbody>
         </table>
