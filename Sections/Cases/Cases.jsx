@@ -98,7 +98,7 @@ const StyledCases = styled.div`
       p {
         font-size: var(--norm);
         font-weight: 400;
-        color: var(--grey);
+        color: var(--lgrey);
       }
 
       .cta-buttons {
@@ -157,7 +157,7 @@ const StyledCases = styled.div`
       p {
         font-size: var(--norm);
         font-weight: 400;
-        color: var(--grey);
+        color: var(--lgrey);
       }
 
       .cta-buttons {

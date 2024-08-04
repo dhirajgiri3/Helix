@@ -133,15 +133,16 @@ const StyledSecond = styled.div`
       }
       p {
         font-size: var(--sm);
-        font-weight: 500;
-        color: var(--grey);
+        font-weight: 400;
+        color: var(--lgrey);
         line-height: 1.5;
       }
     }
   }
 `;
 
-function Second() {
+function Second()
+{
   return (
     <StyledSecond>
       <div className="heading">
@@ -159,10 +160,9 @@ function Second() {
           </div>
         </div>
         <div className="right">
-          <h1>Accelerate Your Transformation</h1>
+          <h1>Customer-Centric Approach</h1>
           <p>
-            Leverage our expertise and proven development processes to build
-            your custom logistics solution with unmatched speed and efficiency.
+            Your satisfaction is our priority. Helix offers 24/7 support and a user-friendly interface to minimize onboarding time and maximize efficiency, ensuring a positive experience from the start.
           </p>
         </div>
       </div>{" "}
@@ -173,10 +173,9 @@ function Second() {
           </div>
         </div>
         <div className="right">
-          <h1>Customized for Your Success</h1>
+          <h1>Best Pricing in Market</h1>
           <p>
-            Get software designed specifically for your workflows and business
-            goals. Eliminate the compromises of generic platforms.
+            Helix starts at just ₹4,999/month, offering comprehensive features and pre-integrated rate cards to ensure profitability from the first month. Eligible businesses can enjoy a 1-month free trial.
           </p>
         </div>
       </div>
@@ -215,11 +214,9 @@ function Second() {
           </div>
         </div>
         <div className="right">
-          <h1>Innovation Through Collaboration</h1>
+          <h1>Comprehensive Rate Card Integration</h1>
           <p>
-            Partner with us for a transparent, personalized approach. We'll
-            provide expert guidance and ongoing support to ensure your solution
-            evolves alongside your business.
+            Helix provides pre-integrated rate cards with top logistics companies, simplifying rate negotiations and enhancing profitability from day one.
           </p>
         </div>
       </div>

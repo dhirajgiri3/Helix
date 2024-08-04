@@ -110,8 +110,8 @@ const StyledHero = styled.section`
 
       h4 {
         font-size: var(--norm);
-        font-weight: 300;
-        color: var(--lgrey);
+        font-weight: 400;
+        color: var(--grey);
         text-align: center;
         width: 50%;
 

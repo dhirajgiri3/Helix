@@ -88,7 +88,7 @@ const StyledAbout = styled.div`
 
       p {
         font-size: var(--sm);
-        color: var(--light);
+        color: var(--dark-white);
         font-weight: 400;
         line-height: 1.5;
         width: 80%;
@@ -123,7 +123,7 @@ const StyledAbout = styled.div`
       align-items: flex-start;
       gap: 1rem;
       font-size: var(--sm);
-      color: var(--white);
+      color: var(--dark-white);
       font-weight: 400;
       line-height: 1.5;
 
@@ -176,7 +176,7 @@ const StyledAbout = styled.div`
 
       p {
         font-size: var(--sm);
-        color: var(--dark);
+        color: var(--lgrey);
         font-weight: 400;
         line-height: 1.5;
         width: 80%;
@@ -244,7 +244,8 @@ const StyledAbout = styled.div`
   }
 `;
 
-function About() {
+function About()
+{
   return (
     <StyledAbout id="aboutus">
       <div className="first div">
@@ -258,12 +259,7 @@ function About() {
             About <span>Helix</span>
           </h1>
           <p>
-            Helix was created out of a desire to empower growing businesses with
-            the logistics technology they need to succeed – without the lengthy
-            wait times. We're a team of developers and logistics enthusiasts who
-            believe that user experience is paramount. Our mission is to provide
-            intuitive, responsive software solutions that streamline your
-            shipping operations and drive growth.
+            Are you a small or medium-sized business aiming to grow? Helix is here to help with our advanced, yet affordable shipping aggregator software. Starting at just ₹4,999/month, our feature-rich solution streamlines logistics, reduces costs, and boosts efficiency. Profit from your shipping operations right from the first month with our pre-integrated rate cards and 1-month free trial for eligible businesses. We understand your challenges and are committed to your success."
           </p>
         </div>
       </div>
@@ -272,43 +268,35 @@ function About() {
       </div>
       <div className="third div divs">
         <p>
-          <span>Small & Medium Business Focus </span> We understand the unique
-          challenges faced by scaling businesses and have tailored our solutions
-          accordingly.
+          <span>Empowering Growth </span> At Helix, we understand the unique challenges of scaling businesses. Our solutions are tailored to help you overcome these obstacles, enabling seamless growth and operational efficiency.
         </p>
       </div>
       <div className="fourth div divs">
         <p>
           <span> User-Centric Design</span>
-          Our interfaces are designed to be easy to use and easy to love,
-          minimizing onboarding time and maximizing efficiency.
+          We prioritize ease of use in our interfaces, minimizing onboarding time and maximizing productivity. Our goal is to make your logistics management as intuitive and straightforward as possible.
         </p>
       </div>
       <div className="fifth div divs">
         <p>
           {" "}
-          <span>Technology Advantage</span>
-          Built on Next.js and Google Cloud, Helix delivers speed, reliability,
-          and a seamless user experience.
+          <span>Technological Edge</span>
+          Built on Next.js and Google Cloud, Helix offers unparalleled speed, reliability, and a seamless user experience. This technological advantage ensures that your logistics operations are always running smoothly.
         </p>
       </div>
       <div className="sixth div divs">
         <p>
           {" "}
-          <span>Under Development </span>
-          While Helix is a demo showcasing our capabilities, our case studies
-          exemplify our commitment to exceptional logistics software. Stay tuned
-          as we roll out even more powerful features!
+          <span>Customer-Centric Approach</span>
+          Your satisfaction and success drive us. We offer 24/7 support, ensuring you have the assistance you need whenever you need it. Our team is dedicated to providing solutions that meet and exceed your expectations.
         </p>
       </div>
       <div className="seventh div">
         <Image src={commitment} alt="Helix Commitment" />
         <div className="content">
-          <h1>Our Commitment</h1>
+          <h1>Vision and Commitment</h1>
           <p>
-            We're here to make your logistics operations a competitive
-            advantage. Let's discuss how Helix can accelerate your business
-            success.
+            Helix was born out of a desire to empower businesses with the best logistics technology. Our commitment to your success is unwavering, and we continuously strive to improve and innovate. Your happiness and business growth are our top priorities.
           </p>
         </div>
       </div>

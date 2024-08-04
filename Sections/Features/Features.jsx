@@ -58,8 +58,8 @@ const StyledFeatures = styled.div`
 
       p {
         font-size: var(--norm);
-        font-weight: 500;
-        color: var(--grey);
+        font-weight: 400;
+        color: var(--lgrey);
         text-align: center;
         width: 50%;
         line-height: 1.5;
@@ -82,9 +82,10 @@ const StyledFeatures = styled.div`
     place-items: center;
 
     @media screen and (max-width: 768px) {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-      gap: 0rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
       padding: 3rem 0;
     }
 
@@ -144,8 +145,8 @@ const StyledFeatures = styled.div`
 
       p {
         font-size: var(--sm);
-        font-weight: 500;
-        color: var(--grey);
+        font-weight: 400;
+        color: var(--lgrey);
         line-height: 1.5;
       }
     }

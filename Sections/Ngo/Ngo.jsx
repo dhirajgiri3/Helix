@@ -168,7 +168,7 @@ function Ngo() {
         <Image
           src={ngoimage}
           alt="Cyper Studio Helps NGO's and Charities"
-          title="Cyper Studio Helps NGO's and  Charities"
+          title="Cyper Studio Helps NGO's and Charities"
         />
       </div>
       <div className="ngoright">

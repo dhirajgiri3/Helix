@@ -1,3 +1,5 @@
+// File path: /path/to/your/component/Service.jsx
+
 import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
@@ -16,6 +18,7 @@ const StyledService = styled.div`
   align-items: center;
   gap: 3rem;
   padding: 2.5rem 7.5rem;
+  padding-bottom: 3rem;
 
   @media screen and (max-width: 768px) {
     padding: 2.5rem 1rem;
@@ -24,7 +27,7 @@ const StyledService = styled.div`
   }
 
   .service-left {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,11 +139,26 @@ const StyledService = styled.div`
         }
 
         p {
-          font-size: var(--sm);
-          font-weight: 500;
-          color: var(--grey);
+          font-size: var(--norm);
+          font-weight: 300;
+          color: var(--lgrey);
           transition: all 0.3s ease-in-out;
           line-height: 1.5;
+        }
+
+        ul {
+          list-style: disc;
+          padding-left: 1rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          li {
+            font-size: var(--smx);
+            font-weight: 500;
+            color: var(--lgrey);
+            transition: all 0.3s ease-in-out;
+            line-height: 1.5;
+          }
         }
       }
     }
@@ -179,7 +197,7 @@ function Service() {
           </div>
           <div className="title">
             <h1>
-              Your Comprehensive Logistics <span> Solutions</span> Partner
+              Our Comprehensive <span>Services</span>
             </h1>
           </div>
           <div className="services">
@@ -187,69 +205,91 @@ function Service() {
               <div className="icon">
                 <Image
                   src={development}
-                  alt="Helix Software Deevelopment Service"
-                  title="Development Icon"
+                  alt="White-Label Shipping Aggregator Software"
+                  title="White-Label Shipping Aggregator Software"
                 />
               </div>
-              <h1>Custom Logistics Software Development</h1>
+              <h1>White-Label Shipping Aggregator Software</h1>
               <p>
-                We craft robust and scalable logistics solutions – websites,
-                apps, and backend systems – precisely designed to solve your
-                unique challenges and streamline your day-to-day operations.
+                Streamline logistics, reduce costs, and boost efficiency with
+                pre-integrated rate cards from top logistics companies.
               </p>
+              <ul>
+                <li>Pre-Integrated Rate Cards</li>
+                <li>Custom Branding</li>
+                <li>Advanced Analytics</li>
+                <li>Scalability</li>
+                <li>1-Month Free Trial</li>
+              </ul>
             </div>
             <div className="service-card secure">
               <div className="icon">
                 <Image
                   src={secure}
-                  alt="Helix Secure Service"
-                  title="Secure Icon"
+                  alt="Custom Logistics Software Development"
+                  title="Custom Logistics Software Development"
                 />
               </div>
-              <h1>Maintenance & Support</h1>
+              <h1>Custom Logistics Software Development</h1>
               <p>
-                Ensure your software runs flawlessly with proactive maintenance,
-                rapid issue resolution, and regular updates. Benefit from our
-                deep industry knowledge for ongoing enhancements that keep you
-                ahead of the curve.
+                Tailored to your business needs, our custom logistics software
+                optimizes processes and integrates seamlessly with existing
+                systems for enhanced efficiency.
               </p>
+              <ul>
+                <li>Bespoke Solutions</li>
+                <li>Integration Capabilities</li>
+                <li>User-Friendly Interface</li>
+                <li>Advanced Security</li>
+              </ul>
             </div>
             <div className="service-card partner">
               <div className="icon">
                 <Image
                   src={partner}
-                  alt="Helix Partner Service"
-                  title="Partner Icon"
+                  alt="Maintenance & Support"
+                  title="Maintenance & Support"
                 />
               </div>
-              <h1> Strategic Partnerships for Success</h1>
+              <h1>Maintenance & Support</h1>
               <p>
-                Launch confidently with access to our pre-negotiated courier
-                rates, industry resources, and connections to trusted service
-                providers.
+                Ensure flawless software performance with our proactive
+                maintenance and support services, providing monitoring, rapid
+                issue resolution, and regular updates.
               </p>
+              <ul>
+                <li>Proactive Monitoring</li>
+                <li>Rapid Response</li>
+                <li>Regular Updates</li>
+                <li>Dedicated Support Team</li>
+              </ul>
             </div>
             <div className="service-card growth">
               <div className="icon">
                 <Image
                   src={growth}
-                  alt="Helix Growth Service"
-                  title="Growth Icon"
+                  alt="Strategic Partnerships & Growth Acceleration"
+                  title="Strategic Partnerships & Growth Acceleration"
                 />
               </div>
-              <h1>Growth Acceleration & Digital Marketing</h1>
+              <h1>Strategic Partnerships & Growth Acceleration</h1>
               <p>
-                Gain expert insights and strategic marketing tools to attract
-                customers, optimize your online presence, and scale your
-                shipping aggregator business. Tap into Cyper Studio's proven
-                digital marketing expertise for comprehensive growth solutions.
+                Leverage our strategic partnerships and digital marketing
+                expertise to gain a competitive edge and accelerate your
+                business growth.
               </p>
+              <ul>
+                <li>Courier Partnerships</li>
+                <li>Technology Integrations</li>
+                <li>SEO Optimization</li>
+                <li>Social Media Marketing</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div className="service-right">
+        {/* <div className="service-right">
           <Image src={services} alt="Helix Services" title="Helix Services" />
-        </div>
+        </div> */}
       </StyledService>
 
       <Steps />
