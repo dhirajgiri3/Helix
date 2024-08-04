@@ -113,7 +113,7 @@ const StyledAbout = styled.div`
 
   .divs {
     padding: 1rem;
-    background: var(--primary);
+    background: var(--black);
 
     p {
       width: 80%;
@@ -132,10 +132,6 @@ const StyledAbout = styled.div`
         font-weight: 700;
       }
     }
-  }
-
-  .sixth {
-    background: var(--primary);
   }
 
   .seventh {

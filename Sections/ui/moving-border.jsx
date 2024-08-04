@@ -16,6 +16,7 @@ const Container = styled.button`
   font-size: 1.25rem;
   padding: 1px;
   overflow: hidden;
+  border-radius: 1rem;
 `;
 
 const InnerDiv = styled.div`

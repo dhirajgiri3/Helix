@@ -268,7 +268,6 @@ const StyledButton = styled(Button)`
   }
 `;
 
-// PricingTier component
 function PricingTier() {
   const [isYearly, setIsYearly] = useState(false);
   const [professionalWithApp, setProfessionalWithApp] = useState(false);

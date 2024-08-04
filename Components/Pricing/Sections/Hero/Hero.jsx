@@ -7,7 +7,6 @@ import { AnimatedTooltipPreview } from "../Animations/AnimatedTooltipPreview.jsx
 import { CardHoverEffectDemo } from "../Animations/CardHoverEffectDemo.jsx";
 import { InfiniteMovingCardsDemo } from "../Animations/InfiniteMovingCardsDemo.jsx";
 import { FlipWordsDemo } from "../Animations/FlipWordsDemo.jsx";
-import Link from "next/link.js";
 
 const Overlay = styled.div`
   position: absolute;
@@ -71,7 +70,6 @@ export function Hero() {
         <a href="/contact">
           <Getstarted text={"Get Started"} />
         </a>
-
         <CardHoverEffectDemo />
         <InfiniteMovingCardsDemo />
       </Heading>

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://helix.cyper.studio
+
+# Sitemaps
+Sitemap: https://helix.cyper.studio/sitemap.xml

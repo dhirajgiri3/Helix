@@ -15,13 +15,13 @@ const OfferLeftStyle = styled.div`
   background: var(--grey);
   padding: 2rem;
   color: var(--white);
-  border-radius: 1rem;
 
   @media screen and (max-width: 767px) {
     height: 100%;
   }
 
   .lable {
+    border-radius: 1rem;
     .text {
       display: flex;
       align-items: flex-start;

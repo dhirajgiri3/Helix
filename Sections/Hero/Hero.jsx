@@ -90,7 +90,7 @@ const StyledHero = styled.section`
       }
 
       h1 {
-        font-size: var(--xxl);
+        font-size: 3.8rem;
         font-weight: 800;
         color: var(--dark);
         text-align: center;
@@ -110,8 +110,8 @@ const StyledHero = styled.section`
 
       h4 {
         font-size: var(--norm);
-        font-weight: 500;
-        color: var(--grey);
+        font-weight: 300;
+        color: var(--lgrey);
         text-align: center;
         width: 50%;
 
@@ -221,9 +221,9 @@ const StyledHero = styled.section`
 
       .para {
         p {
-          font-size: var(--norm);
-          font-weight: 400;
-          color: var(--grey);
+          font-size: var(--sm);
+          font-weight: 300;
+          color: var(--lgrey);
           text-align: center;
 
           span {
@@ -305,13 +305,10 @@ function Hero() {
         </div>
         <div className="middle">
           <h1>
-            Let's Design Your <span>Success</span> : Get a Custom HELIX-like
-            Platform
+            Let's Design Your <span>Success</span> : Get a Custom or White-Label HELIX Platform
           </h1>
           <h4>
-            HELIX represents the power of logistics software tailored to your
-            exact needs. Our expertise and your vision – it's the perfect
-            combination to unlock your business's full potential.
+            HELIX represents the power of logistics software tailored to your exact needs. Our expertise and your vision – it's the perfect combination to unlock your business's full potential.
           </h4>
         </div>
         <div className="bottom">

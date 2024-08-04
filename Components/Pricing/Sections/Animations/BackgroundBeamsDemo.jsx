@@ -17,7 +17,7 @@ const Container = styled.div`
   -webkit-font-smoothing: antialiased;
   z-index: 0;
   margin-bottom: 3rem;
-  /* margin-bottom: 2rem; */
+ 
 
   @media (max-width: 767px) {
     height: 60vh;
