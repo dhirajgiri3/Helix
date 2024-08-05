@@ -7,15 +7,18 @@ import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "dhiraj",
-  description: "HELIX: Get custom shipping and Logistics aggregator/management software built fast. Experience streamlined operations, expert support, and accelerated growth. Free consultation.",
-  keywords: "Helix the logistics software provider, Helix by cyper studio, custom logistics software, shipping software, logistics software provider, shipping business software, logistics software solution, logistics software development, logistics software company india, shipping business optimization",
+  title: "Bluechip: Case Study on Advanced Logistics Software Solutions by Cyper Studio",
+  description: "Explore how Bluechip leverages Cyper Studio's innovative logistics software to enhance supply chain efficiency and operational excellence. Discover the impact of advanced logistics solutions on Bluechip's business growth in our detailed case study.",
+  keywords: "Logistics software solutions India, Custom logistics software development, Shipping software provider, Supply chain logistics solutions, Third-party logistics (3PL) software, Warehouse management software, Last mile logistics services, Digital logistics solutions, Bluechip logistics case study, Transportation management software",
 };
 
-export default function RootLayout({ children }) {
+export default function BluechipCaseStudyLayout({ children }) {
   return (
     <html lang="en">
       <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords} />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-071ZXJEWG4"></script>
         <script dangerouslySetInnerHTML={{
           __html: `

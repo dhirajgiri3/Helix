@@ -18,14 +18,6 @@
       "static/css/70071bc3e4ba1b1e.css",
       "static/chunks/app/layout-bf96f5df95a8b63b.js"
     ],
-    "/demo/page": [
-      "static/chunks/webpack-3ddf110b3c270869.js",
-      "static/chunks/fd9d1056-185969cc1c549d5b.js",
-      "static/chunks/69-a784bf50f4e902d4.js",
-      "static/chunks/main-app-664d801db810311e.js",
-      "static/chunks/712-f02a5b19c188c1e3.js",
-      "static/chunks/app/demo/page-d1e2340f4742dec4.js"
-    ],
     "/page": [
       "static/chunks/webpack-3ddf110b3c270869.js",
       "static/chunks/fd9d1056-185969cc1c549d5b.js",
@@ -39,6 +31,14 @@
       "static/chunks/532-844479e6329a049a.js",
       "static/chunks/619-fe6c03c693254cbd.js",
       "static/chunks/app/page-0f3193269eefcd6b.js"
+    ],
+    "/demo/page": [
+      "static/chunks/webpack-3ddf110b3c270869.js",
+      "static/chunks/fd9d1056-185969cc1c549d5b.js",
+      "static/chunks/69-a784bf50f4e902d4.js",
+      "static/chunks/main-app-664d801db810311e.js",
+      "static/chunks/712-f02a5b19c188c1e3.js",
+      "static/chunks/app/demo/page-d1e2340f4742dec4.js"
     ],
     "/pricing/page": [
       "static/chunks/webpack-3ddf110b3c270869.js",
@@ -81,26 +81,6 @@
       "static/css/b04cc9e8134bf2c6.css",
       "static/chunks/app/blueship/layout-1bf5fe748fc683b3.js"
     ],
-    "/shipexindia/page": [
-      "static/chunks/webpack-3ddf110b3c270869.js",
-      "static/chunks/fd9d1056-185969cc1c549d5b.js",
-      "static/chunks/69-a784bf50f4e902d4.js",
-      "static/chunks/main-app-664d801db810311e.js",
-      "static/chunks/712-f02a5b19c188c1e3.js",
-      "static/chunks/874-d483d9abffc9b0f1.js",
-      "static/chunks/app/shipexindia/page-ce2ec66d4ab8f405.js"
-    ],
-    "/shipexindia/layout": [
-      "static/chunks/webpack-3ddf110b3c270869.js",
-      "static/chunks/fd9d1056-185969cc1c549d5b.js",
-      "static/chunks/69-a784bf50f4e902d4.js",
-      "static/chunks/main-app-664d801db810311e.js",
-      "static/chunks/712-f02a5b19c188c1e3.js",
-      "static/chunks/874-d483d9abffc9b0f1.js",
-      "static/chunks/827-e32e3807fe92a825.js",
-      "static/css/b04cc9e8134bf2c6.css",
-      "static/chunks/app/shipexindia/layout-2b207cb1ed5bf3be.js"
-    ],
     "/contact/page": [
       "static/chunks/webpack-3ddf110b3c270869.js",
       "static/chunks/fd9d1056-185969cc1c549d5b.js",
@@ -123,6 +103,26 @@
       "static/chunks/827-e32e3807fe92a825.js",
       "static/css/b04cc9e8134bf2c6.css",
       "static/chunks/app/contact/layout-c49fffc409e2cca8.js"
+    ],
+    "/shipexindia/page": [
+      "static/chunks/webpack-3ddf110b3c270869.js",
+      "static/chunks/fd9d1056-185969cc1c549d5b.js",
+      "static/chunks/69-a784bf50f4e902d4.js",
+      "static/chunks/main-app-664d801db810311e.js",
+      "static/chunks/712-f02a5b19c188c1e3.js",
+      "static/chunks/874-d483d9abffc9b0f1.js",
+      "static/chunks/app/shipexindia/page-ce2ec66d4ab8f405.js"
+    ],
+    "/shipexindia/layout": [
+      "static/chunks/webpack-3ddf110b3c270869.js",
+      "static/chunks/fd9d1056-185969cc1c549d5b.js",
+      "static/chunks/69-a784bf50f4e902d4.js",
+      "static/chunks/main-app-664d801db810311e.js",
+      "static/chunks/712-f02a5b19c188c1e3.js",
+      "static/chunks/874-d483d9abffc9b0f1.js",
+      "static/chunks/827-e32e3807fe92a825.js",
+      "static/css/b04cc9e8134bf2c6.css",
+      "static/chunks/app/shipexindia/layout-2b207cb1ed5bf3be.js"
     ]
   }
 }
