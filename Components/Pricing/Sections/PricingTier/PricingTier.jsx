@@ -62,7 +62,7 @@ const StyledPricingTable = styled.div`
         font-size: var(--sm);
         padding: 10px;
         text-align: center;
-        border: 1px solid #181920;
+        border: 1px solid #1b212d;
         transition: all 0.3s ease;
       }
 
@@ -106,7 +106,7 @@ const StyledPricingTable = styled.div`
 
       td:nth-child(4),
       th:nth-child(4) {
-        background-color: #1f2933;
+        background-color: #1f283b;
         color: var(--white) !important;
         border: none;
       }
