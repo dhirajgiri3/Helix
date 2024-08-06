@@ -25,22 +25,23 @@ export function CardHoverEffectDemo() {
 
 export const projects = [
   {
-    title: "Full-Featured Shipping Management",
+    title: "The Most Value for Money Software",
     description:
-      "Whether you're shipping to your neighbor or Neptune, we've got you covered with B2C, B2B, and international options.",
+      "Can't afford 3-5 lacs for a shipping aggregator software? Don't worry! Helix is here for you. Get the same high-quality, advanced software for just ₹4,999/month.Whether you're shipping to your neighbor or Neptune, we've got you covered with B2C, B2B, and international options.",
     link: "https://stripe.com",
   },
-  {
-    title: "Advanced Analytics and Reporting:",
-    description:
-      " Delve into the data without requiring a PhD; our analytics are intuitive and make shipping a breeze.",
-    link: "https://netflix.com",
-  },
+  
   {
     title: "Excellent Customer User Interface",
     description:
       "If you can use a smartphone, you can use Helix. It's that easy—no tech jargon—just streamlined.",
     link: "https://google.com",
+  },
+  {
+    title: "Experience Helix Risk-Free - 1 Month Free-Trial",
+    description:
+      " Hesitant to invest upfront? Try our 1-month free trial and see the benefits for yourself. We think we know your decision already—you'll want to keep using Helix! 😉",
+    link: "https://netflix.com",
   },
   {
     title: "Excellent Customer Service",
@@ -49,9 +50,9 @@ export const projects = [
     link: "https://meta.com",
   },
   {
-    title: "Affordable Pricing Plans",
+    title: "Full-Featured Shipping Management",
     description:
-      "We won't let you break the bank. We promise. Even your accountant will be impressed.",
+      "Whether you're shipping to your neighbor or Neptune, we've got you covered with B2C, B2B, and international options.",
     link: "https://amazon.com",
   },
 ];

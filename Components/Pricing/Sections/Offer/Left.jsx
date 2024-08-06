@@ -54,7 +54,8 @@ const OfferLeftStyle = styled.div`
   }
 `;
 
-function Left() {
+function Left()
+{
   return (
     <OfferLeftStyle>
       <div className="lable">
@@ -74,12 +75,7 @@ function Left() {
       </div>
       <div className="desc">
         <p>
-          Experience the full force of Helix with no strings attached. Test our
-          highly-rated shipping aggregator software free for one month. Discover
-          how Helix's advanced features can automate your shipping processes,
-          save money, and boost delivery efficiency. If you're in the courier
-          business and looking to grow, this is the golden opportunity you
-          cannot afford to lose! Get started with the Helix free trial now!
+          Experience the full force of Helix with no strings attached. Test our highly-rated shipping aggregator software free for one month. Discover how Helix's advanced features, including real-time shipment visibility, AI-powered route optimization, and automated customs documentation, can automate your shipping processes, save money, and boost delivery efficiency. With our pre-integrated rate cards from top logistics companies, you can offer competitive shipping rates and start making profits from the first month. If you're in the courier business and looking to grow, this is the golden opportunity you cannot afford to lose! Get started with the Helix free trial now!
         </p>
       </div>
       <div className="offer-cta">

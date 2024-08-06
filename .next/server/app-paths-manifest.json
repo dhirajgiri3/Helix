@@ -1,10 +1,10 @@
 {
   "/_not-found": "app/_not-found.js",
-  "/demo/page": "app/demo/page.js",
   "/page": "app/page.js",
+  "/demo/page": "app/demo/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/pricing/page": "app/pricing/page.js",
-  "/contact/page": "app/contact/page.js",
+  "/shipexindia/page": "app/shipexindia/page.js",
   "/blueship/page": "app/blueship/page.js",
-  "/shipexindia/page": "app/shipexindia/page.js"
+  "/pricing/page": "app/pricing/page.js",
+  "/contact/page": "app/contact/page.js"
 }

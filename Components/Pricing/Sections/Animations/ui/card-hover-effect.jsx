@@ -26,7 +26,7 @@ const Grid = styled.div`
   }
 `;
 
-const CardLink = styled(Link)`
+const CardLink = styled.div`
   position: relative;
   display: block;
   padding: 0.5rem;
@@ -176,7 +176,6 @@ export const HoverEffect = ({ items, className }) => {
     <Grid className={className}>
       {items.map((item, idx) => (
         <CardLink
-          href={item.link}
           key={item.link}
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
