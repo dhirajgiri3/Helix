@@ -60,47 +60,6 @@
       "static/css/b04cc9e8134bf2c6.css",
       "static/chunks/app/shipexindia/layout-ae0ec45ba04d9d49.js"
     ],
-    "/blueship/page": [
-      "static/chunks/webpack-8062fb956fde9b77.js",
-      "static/chunks/fd9d1056-185969cc1c549d5b.js",
-      "static/chunks/69-bfef788477b035ae.js",
-      "static/chunks/main-app-664d801db810311e.js",
-      "static/chunks/712-f02a5b19c188c1e3.js",
-      "static/chunks/874-2df9be14c6a2193f.js",
-      "static/chunks/619-06b189f8a69222e2.js",
-      "static/chunks/app/blueship/page-cb8b176c8cb46440.js"
-    ],
-    "/blueship/layout": [
-      "static/chunks/webpack-8062fb956fde9b77.js",
-      "static/chunks/fd9d1056-185969cc1c549d5b.js",
-      "static/chunks/69-bfef788477b035ae.js",
-      "static/chunks/main-app-664d801db810311e.js",
-      "static/chunks/712-f02a5b19c188c1e3.js",
-      "static/chunks/874-2df9be14c6a2193f.js",
-      "static/chunks/827-41d64c9073b98962.js",
-      "static/css/b04cc9e8134bf2c6.css",
-      "static/chunks/app/blueship/layout-559658cdf8c9c71f.js"
-    ],
-    "/pricing/page": [
-      "static/chunks/webpack-8062fb956fde9b77.js",
-      "static/chunks/fd9d1056-185969cc1c549d5b.js",
-      "static/chunks/69-bfef788477b035ae.js",
-      "static/chunks/main-app-664d801db810311e.js",
-      "static/chunks/712-f02a5b19c188c1e3.js",
-      "static/chunks/874-2df9be14c6a2193f.js",
-      "static/chunks/827-41d64c9073b98962.js",
-      "static/chunks/43-f85578e925dd1e19.js",
-      "static/chunks/app/pricing/page-156a176027a89214.js"
-    ],
-    "/pricing/layout": [
-      "static/chunks/webpack-8062fb956fde9b77.js",
-      "static/chunks/fd9d1056-185969cc1c549d5b.js",
-      "static/chunks/69-bfef788477b035ae.js",
-      "static/chunks/main-app-664d801db810311e.js",
-      "static/chunks/712-f02a5b19c188c1e3.js",
-      "static/css/b04cc9e8134bf2c6.css",
-      "static/chunks/app/pricing/layout-05e6504133d55c3c.js"
-    ],
     "/contact/page": [
       "static/chunks/webpack-8062fb956fde9b77.js",
       "static/chunks/fd9d1056-185969cc1c549d5b.js",
@@ -123,6 +82,47 @@
       "static/chunks/827-41d64c9073b98962.js",
       "static/css/b04cc9e8134bf2c6.css",
       "static/chunks/app/contact/layout-15b35c4a6da9ff8b.js"
+    ],
+    "/pricing/page": [
+      "static/chunks/webpack-8062fb956fde9b77.js",
+      "static/chunks/fd9d1056-185969cc1c549d5b.js",
+      "static/chunks/69-bfef788477b035ae.js",
+      "static/chunks/main-app-664d801db810311e.js",
+      "static/chunks/712-f02a5b19c188c1e3.js",
+      "static/chunks/874-2df9be14c6a2193f.js",
+      "static/chunks/827-41d64c9073b98962.js",
+      "static/chunks/43-f85578e925dd1e19.js",
+      "static/chunks/app/pricing/page-06c5c7ed0bbf97c8.js"
+    ],
+    "/pricing/layout": [
+      "static/chunks/webpack-8062fb956fde9b77.js",
+      "static/chunks/fd9d1056-185969cc1c549d5b.js",
+      "static/chunks/69-bfef788477b035ae.js",
+      "static/chunks/main-app-664d801db810311e.js",
+      "static/chunks/712-f02a5b19c188c1e3.js",
+      "static/css/b04cc9e8134bf2c6.css",
+      "static/chunks/app/pricing/layout-05e6504133d55c3c.js"
+    ],
+    "/blueship/page": [
+      "static/chunks/webpack-8062fb956fde9b77.js",
+      "static/chunks/fd9d1056-185969cc1c549d5b.js",
+      "static/chunks/69-bfef788477b035ae.js",
+      "static/chunks/main-app-664d801db810311e.js",
+      "static/chunks/712-f02a5b19c188c1e3.js",
+      "static/chunks/874-2df9be14c6a2193f.js",
+      "static/chunks/619-06b189f8a69222e2.js",
+      "static/chunks/app/blueship/page-cb8b176c8cb46440.js"
+    ],
+    "/blueship/layout": [
+      "static/chunks/webpack-8062fb956fde9b77.js",
+      "static/chunks/fd9d1056-185969cc1c549d5b.js",
+      "static/chunks/69-bfef788477b035ae.js",
+      "static/chunks/main-app-664d801db810311e.js",
+      "static/chunks/712-f02a5b19c188c1e3.js",
+      "static/chunks/874-2df9be14c6a2193f.js",
+      "static/chunks/827-41d64c9073b98962.js",
+      "static/css/b04cc9e8134bf2c6.css",
+      "static/chunks/app/blueship/layout-559658cdf8c9c71f.js"
     ]
   }
 }

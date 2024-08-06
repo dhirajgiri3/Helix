@@ -268,17 +268,20 @@ const StyledButton = styled(Button)`
   }
 `;
 
-function PricingTier() {
+function PricingTier()
+{
   const [isYearly, setIsYearly] = useState(false);
   const [professionalWithApp, setProfessionalWithApp] = useState(false);
   const [enterpriseWithApp, setEnterpriseWithApp] = useState(false);
   const [hydrated, setHydrated] = useState(false);
 
-  useEffect(() => {
+  useEffect(() =>
+  {
     setHydrated(true);
   }, []);
 
-  if (!hydrated) {
+  if (!hydrated)
+  {
     return null;
   }
 
@@ -289,8 +292,9 @@ function PricingTier() {
     enterprise: enterpriseWithApp ? 28499 : 24999,
   };
 
-  const yearlyPrices = Object.keys(monthlyPrices).reduce((acc, key) => {
-    acc[key] = Math.round((monthlyPrices[key] * 12 * 0.9) / 12); // 10% discount
+  const yearlyPrices = Object.keys(monthlyPrices).reduce((acc, key) =>
+  {
+    acc[key] = Math.round((monthlyPrices[key] * 12 * 0.95) / 12); // 10% discount
     return acc;
   }, {});
 
@@ -307,7 +311,7 @@ function PricingTier() {
             Monthly
           </StyledButton>
           <StyledButton active={String(isYearly)} onClick={() => setIsYearly(true)}>
-            Annually Save 10%
+            Annually Save 5%
           </StyledButton>
         </div>
         <table>
@@ -317,13 +321,13 @@ function PricingTier() {
               <th>
                 <div className="text">
                   Starter Tier <br />
-                  <p>₹4,999 + 18% GST</p>
+
                 </div>
               </th>
               <th>
                 <div className="text">
                   Essential Tier <br />
-                  <p>₹11,999 + 18% GST</p>
+
                 </div>
               </th>
               <th>
@@ -379,10 +383,10 @@ function PricingTier() {
           <tbody>
             <tr>
               <td className="bld">Price</td>
-              <td className="price">₹{prices.starter}/month</td>
-              <td className="price">₹{prices.essential}/month</td>
-              <td className="price">₹{prices.professional}/month</td>
-              <td className="price">₹{prices.enterprise}/month</td>
+              <td className="price">₹{prices.starter}/M + 18% GST</td>
+              <td className="price">₹{prices.essential}/M + 18% GST</td>
+              <td className="price">₹{prices.professional}/M 18% GST</td>
+              <td className="price">₹{prices.enterprise}/M 18% GST</td>
             </tr>
             <tr>
               <td className="bld">Setup Fee</td>
@@ -411,6 +415,13 @@ function PricingTier() {
               <td>Basic</td>
               <td>Advanced</td>
               <td>Comprehensive</td>
+            </tr>
+            <tr>
+              <td className="bld">Pre-Integrated Ratecards</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
+              <td>✔</td>
             </tr>
             <tr>
               <td className="bld">NDR Management</td>

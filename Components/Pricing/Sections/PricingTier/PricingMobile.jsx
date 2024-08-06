@@ -253,6 +253,9 @@ const PricingMobile = () => {
           <Price>₹{prices.starter.toFixed(0)}/month</Price>
           <FeatureList>
             <Feature>
+              ✔ Pre-Integrated Ratecards
+            </Feature>
+            <Feature>
               ✔ Basic shipment management (B2C, Forward, Reverse)
             </Feature>
             <Feature>✔ COD Shipments Management</Feature>

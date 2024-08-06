@@ -4,7 +4,7 @@
   "/demo/page": "app/demo/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
   "/shipexindia/page": "app/shipexindia/page.js",
-  "/blueship/page": "app/blueship/page.js",
+  "/contact/page": "app/contact/page.js",
   "/pricing/page": "app/pricing/page.js",
-  "/contact/page": "app/contact/page.js"
+  "/blueship/page": "app/blueship/page.js"
 }
