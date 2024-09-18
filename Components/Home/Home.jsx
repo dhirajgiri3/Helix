@@ -11,13 +11,22 @@ import Quote from "@/Sections/Quote/Quote";
 import Second from "@/Sections/Second/Second";
 import Service from "@/Sections/Service/Service";
 import Header from "../Header/Header";
+import { ThreeDCardDemo } from "@/Sections/Footer/ThreeCardDemo";
+import { AnimatedTooltipPreview } from "../Pricing/Sections/Animations/AnimatedTooltipPreview";
+import { MovingBorderDemo } from "@/Sections/Footer/MovingBorderDemo";
+import { FlipWordsDemo } from "../Pricing/Sections/Animations/FlipWordsDemo";
 
 function Home()
 {
   return (
     <div>
+
       <Header />
       <Hero />
+      {/* <ThreeDCardDemo/> */}
+      {/* <AnimatedTooltipPreview /> */}
+      {/* <MovingBorderDemo /> */}
+      {/* <FlipWordsDemo/> */}
       <About />
       <Second />
       <Features />
@@ -27,9 +36,7 @@ function Home()
       <ContactForm />
       <Ngo />
       <Faq />
-      {/* <ThreeDCardDemo /> */}
-      {/* <AnimatedTooltipPreview /> */}
-      {/* <MovingBorderDemo /> */}
+
     </div>
   );
 }

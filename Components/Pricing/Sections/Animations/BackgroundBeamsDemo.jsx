@@ -63,17 +63,17 @@ const Description = styled.p`
   z-index: 10;
 `;
 
-export function BackgroundBeamsDemo() {
+export function BackgroundBeamsDemo()
+{
   return (
     <Container>
       <Content>
-        <Title>Ready to Get Started?</Title>
+        <Title>Need a Custom Logistic Software?</Title>
         <Description>
-          Request a Demo of Helix to see how it can transform your shipping
-          management.
+          Contact our team to discuss your project and discover how we can develop advanced and tailored logistics software to meet your specific requirements.
         </Description>
         <Link href="/contact">
-          <Getstarted text={"Request Now"} />
+          <Getstarted text={"Contact Now"} />
         </Link>
       </Content>
       <BackgroundBeams />

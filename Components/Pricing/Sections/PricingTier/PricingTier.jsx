@@ -383,10 +383,10 @@ function PricingTier()
           <tbody>
             <tr>
               <td className="bld">Price</td>
-              <td className="price">₹{prices.starter}/M + 18% GST</td>
-              <td className="price">₹{prices.essential}/M + 18% GST</td>
-              <td className="price">₹{prices.professional}/M 18% GST</td>
-              <td className="price">₹{prices.enterprise}/M 18% GST</td>
+              <td className="price">₹{prices.starter}/Month </td>
+              <td className="price">₹{prices.essential}/Month </td>
+              <td className="price">₹{prices.professional}/Month </td>
+              <td className="price">₹{prices.enterprise}/Month </td>
             </tr>
             <tr>
               <td className="bld">Setup Fee</td>

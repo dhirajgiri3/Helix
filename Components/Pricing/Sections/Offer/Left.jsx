@@ -50,6 +50,7 @@ const OfferLeftStyle = styled.div`
     p {
       font-size: var(--sm);
       color: var(--dark-white);
+      font-weight: 300;
     }
   }
 `;
@@ -66,7 +67,7 @@ function Left()
               src="https://firebasestorage.googleapis.com/v0/b/cyper-studio.appspot.com/o/offer-icon.svg?alt=media&token=69f1b53b-b40f-4e07-a27e-bf3a277d3470"
               alt="Helix"
             />
-            Limited Time Offer
+            Limited Offer For Eligible Businesses
           </div>
         </Button>
       </div>

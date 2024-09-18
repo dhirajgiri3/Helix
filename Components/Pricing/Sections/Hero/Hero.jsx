@@ -8,6 +8,21 @@ import { CardHoverEffectDemo } from "../Animations/CardHoverEffectDemo.jsx";
 import { InfiniteMovingCardsDemo } from "../Animations/InfiniteMovingCardsDemo.jsx";
 import { FlipWordsDemo } from "../Animations/FlipWordsDemo.jsx";
 
+
+const Container = styled.div`
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #121314;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 10rem;
+`;
+
 const Overlay = styled.div`
   position: absolute;
   inset: 0;
@@ -35,6 +50,7 @@ const Heading = styled.h1`
     width: 80%;
     text-align: center;
 
+
     @media screen and (max-width: 767px) {
       font-size: var(--sm);
     }
@@ -55,37 +71,31 @@ const Heading = styled.h1`
   }
 `;
 
-export function Hero() {
+const MemoizedBoxes = memo(Boxes);
+const MemoizedAnimatedTooltipPreview = memo(AnimatedTooltipPreview);
+const MemoizedCardHoverEffectDemo = memo(CardHoverEffectDemo);
+const MemoizedInfiniteMovingCardsDemo = memo(InfiniteMovingCardsDemo);
+
+export const Hero = memo(function Hero() {
   return (
     <Container>
       <Overlay />
-      <Boxes />
+      <MemoizedBoxes />
       <Heading>
         <FlipWordsDemo />
         <p>
           <span className="span">Helix</span> is Comprehensive Shipping
           Aggregator Software for Businesses of All Sizes
         </p>
-        <AnimatedTooltipPreview />
+        <MemoizedAnimatedTooltipPreview />
         <a href="/contact">
-          <Getstarted text={"Get Started"} />
+          <Getstarted text="Get Started" />
         </a>
-        <CardHoverEffectDemo />
-        <InfiniteMovingCardsDemo />
+        <MemoizedCardHoverEffectDemo />
+        <MemoizedInfiniteMovingCardsDemo />
       </Heading>
     </Container>
   );
-}
+});
 
-const Container = styled.div`
-  min-height: 100vh;
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  background-color: #121314;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 10rem;
-`;
+

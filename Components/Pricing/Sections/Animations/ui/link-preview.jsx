@@ -112,6 +112,7 @@ export const LinkPreview = ({
         onOpenChange={(open) => setOpen(open)}
       >
         <Trigger onMouseMove={handleMouseMove} className={className}>
+          
           {children}
         </Trigger>
 
@@ -139,6 +140,7 @@ export const LinkPreview = ({
                     priority
                     alt="preview image"
                   />
+
                 </LinkWrapper>
               </MotionDiv>
             )}
