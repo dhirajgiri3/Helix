@@ -5,7 +5,6 @@ import React from "react";
 import styled from "styled-components";
 import logo from "@/Assets/Images/Logo/Helix-logo.png";
 import Image from "next/image";
-import { LinkPreview } from "../Pricing/Sections/Animations/ui/link-preview";
 
 const StyledHeader = styled.div`
   width: 100vw;
@@ -21,7 +20,6 @@ const StyledHeader = styled.div`
 
   @media screen and (max-width: 768px) {
     padding: 0 2rem;
-
   }
 
   @media screen and (max-width: 480px) {
@@ -177,67 +175,42 @@ function Header() {
       <div className="middle">
         <ul>
           <li>
-            <LinkPreview url="https://helix.cyper.studio" className="link-text">
-              Home
-            </LinkPreview>{" "}
+            <Link href="/" className="link">Home</Link>
           </li>
           <li>
-            <LinkPreview
-              url="https://helix.cyper.studio/#services"
-              className="link-text"
-            >
-              <div className="link" onClick={scrollToServices}>
-                Services
-              </div>
-            </LinkPreview>
+            <Link href="/#services" className="link" onClick={scrollToServices}>
+              Services
+            </Link>
           </li>
           <li>
-            <LinkPreview
-              url="https://helix.cyper.studio/#features"
-              className="link-text"
-            >
-              <div className="link" onClick={scrollToFeatures}>
-                Features
-              </div>
-            </LinkPreview>
+            <Link href="/#features" className="link" onClick={scrollToFeatures}>
+              Features
+            </Link>
           </li>
           <li>
-            <LinkPreview
-              url="https://helix.cyper.studio/#cases"
-              className="link-text"
-            >
-              <div className="link" onClick={scrollToCases}>
-                Case Study
-              </div>
-            </LinkPreview>
+            <Link href="/#cases" className="link" onClick={scrollToCases}>
+              Case Study
+            </Link>
           </li>
           <li>
-            <LinkPreview
-              url="https://helix.cyper.studio/pricing"
-              className="link-text"
-            >
+            <Link href="/pricing" className="link">
               Pricing
-            </LinkPreview>
+            </Link>
           </li>
           <li>
-            <LinkPreview
-              url="https://helix.cyper.studio/#aboutus"
-              className="link-text"
-            >
-              <div className="link" onClick={scrollToAboutUs}>
-                About Us
-              </div>
-            </LinkPreview>
+            <Link href="/#aboutus" className="link" onClick={scrollToAboutUs}>
+              About Us
+            </Link>
           </li>
         </ul>
       </div>
       <div className="right">
         <div className="link button-link pricing">
-          <a href="/pricing">Pricing</a>
+          <Link href="/pricing">Pricing</Link>
         </div>
 
         <div className="link button-link">
-          <a href="/contact">Contact Sales</a>
+          <Link href="/contact">Contact Sales</Link>
         </div>
       </div>
     </StyledHeader>
