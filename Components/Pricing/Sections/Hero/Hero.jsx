@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { memo } from "react";
 import styled from "styled-components";
 import { Boxes } from "../Animations/ui/background-boxes.jsx";
 import Getstarted from "../Buttons/Getstarted.jsx";
@@ -7,7 +7,6 @@ import { AnimatedTooltipPreview } from "../Animations/AnimatedTooltipPreview.jsx
 import { CardHoverEffectDemo } from "../Animations/CardHoverEffectDemo.jsx";
 import { InfiniteMovingCardsDemo } from "../Animations/InfiniteMovingCardsDemo.jsx";
 import { FlipWordsDemo } from "../Animations/FlipWordsDemo.jsx";
-
 
 const Container = styled.div`
   min-height: 100vh;
