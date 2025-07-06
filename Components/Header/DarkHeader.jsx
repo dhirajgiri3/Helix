@@ -177,13 +177,13 @@ function Header() {
       <div className="middle">
         <ul>
           <li>
-            <LinkPreview url="https://helix.cyper.studio" className="link-text">
+            <LinkPreview url="https://helix.cyperstudio.in" className="link-text">
               Home
             </LinkPreview>{" "}
           </li>
           <li>
             <LinkPreview
-              url="https://helix.cyper.studio/#services"
+              url="https://helix.cyperstudio.in/#services"
               className="link-text"
             >
               <div className="link" onClick={scrollToServices}>
@@ -193,7 +193,7 @@ function Header() {
           </li>
           <li>
             <LinkPreview
-              url="https://helix.cyper.studio/#features"
+              url="https://helix.cyperstudio.in/#features"
               className="link-text"
             >
               <div className="link" onClick={scrollToFeatures}>
@@ -203,7 +203,7 @@ function Header() {
           </li>
           <li>
             <LinkPreview
-              url="https://helix.cyper.studio/#cases"
+              url="https://helix.cyperstudio.in/#cases"
               className="link-text"
             >
               <div className="link" onClick={scrollToCases}>
@@ -213,7 +213,7 @@ function Header() {
           </li>
           <li>
             <LinkPreview
-              url="https://helix.cyper.studio/pricing"
+              url="https://helix.cyperstudio.in/pricing"
               className="link-text"
             >
               Pricing
@@ -221,7 +221,7 @@ function Header() {
           </li>
           <li>
             <LinkPreview
-              url="https://helix.cyper.studio/#aboutus"
+              url="https://helix.cyperstudio.in/#aboutus"
               className="link-text"
             >
               <div className="link" onClick={scrollToAboutUs}>

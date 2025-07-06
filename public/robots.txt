@@ -3,8 +3,8 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://helix.cyper.studio
+Host: https://helix.cyperstudio.in
 
 # Sitemaps
-Sitemap: https://helix.cyper.studio/sitemap.xml
-Sitemap: https://helix.cyper.studio/sitemap-0.xml
+Sitemap: https://helix.cyperstudio.in/sitemap.xml
+Sitemap: https://helix.cyperstudio.in/sitemap-0.xml
