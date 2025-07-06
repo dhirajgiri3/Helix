@@ -275,8 +275,8 @@ function Footer() {
         </div>
         <div className="contacts">
           <p>Connect with us</p>
-          <h1>Info@cyper.studio</h1>
-          <h1>+91 9904392992</h1>
+          <h1>hello@cyperstudio.in</h1>
+          <h1>+91 9569691483</h1>
           <div className="socials">
             <a href="https://www.facebook.com/cyperstudioo/" target="_blank">
               <FacebookIcon />
